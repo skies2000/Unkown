@@ -1,0 +1,157 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>메인</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <script src='../jq_lib/jquery-3.2.1.min.js'></script>
+    <script>
+        $(document).ready(
+			function(){
+                var url = $('#pathCheck').val();
+                xhr = new XMLHttpRequest();
+	           xhr.open('get',url); // url요청 정보
+	           xhr.send(); // 서버에 전송
+               var str='';
+               xhr.onreadystatechange=function(){
+                   if(xhr.readyState == 4 && xhr.status == 200){
+                       str = xhr.responseText;
+                       $('#indexContent').html(str);
+                   }
+               }
+            $('#indexNav a').click(function(){
+                alert($(this).val());
+                $('#pathCheck').val("testFile.html");
+                 var url = $('#pathCheck').val();
+                xhr = new XMLHttpRequest();
+	           xhr.open('get',url); // url요청 정보
+	           xhr.send(); // 서버에 전송
+               var str='';
+               xhr.onreadystatechange=function(){
+                   if(xhr.readyState == 4 && xhr.status == 200){
+                       str = xhr.responseText;
+                       $('#indexContent').html(str);
+                   }
+               }
+            });
+                
+            
+                
+                
+                
+            });
+    </script>
+
+    <style>
+        body{
+            background-color: black;
+        }
+        * {
+            box-sizing: border-box;
+            color:white;
+            text-decoration: none;
+            
+        }
+        
+        #allBody {
+            border: 1px solid red;
+        }
+        
+        #indexHeader {
+            border: 1px solid white;
+            height: 100px;
+            position:relative;
+            
+        }
+        #indexHeader a{
+            display: inline-block;
+            position: absolute;
+            right:0;
+            bottom: 0;
+            
+        }
+        
+        #indexSection {
+            border: 1px solid black;
+        }
+        
+        #indexFooter {
+            border: 1px solid yellow;
+            height: 100px;
+        }
+        
+        #indexNav {
+            position: fixed;
+            
+            width: 100px;
+            height: 100%;
+            border: 1px solid maroon;
+            background-color: rgb(41, 36, 36);
+            
+        }
+        #indexNav a{
+            display: inline-block;
+            width: 90%;
+            text-align: right;
+            background-color: rgb(41, 36, 36);
+            
+        }
+        
+        #indexContent {
+            width: 90%;
+            margin: 0 auto;
+            border: 3px solid blue;
+        }
+        
+        #indexSection #indexContent img {
+            display: inline-block;
+            width: 100%;
+        }
+        #mainBody{
+        margin-left: 100px;
+         border : 1px solid black;
+            background-color: black;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div id=allBody>
+        <nav id='indexNav'>
+
+            <a href=# id=indexHome>홈</a>
+            <a href=# id=indexLabo>연구소</a>
+            <a href=#>구매</a>
+            <a href=#>생산</a>
+            <a href=#>영업</a>
+            <a href=#>마이페이지</a>
+
+        </nav>
+        <div id='mainBody'>
+
+            <header id='indexHeader'>
+                <a href="#">logout</a>
+            </header>
+
+
+            <section id='indexSection'>
+                <div id='indexContent'>
+                   <input type="hidden" id='pathCheck' value="testFile.html"> <!--이곳에 insert할 경로/파일명이 들어 가면 됩니다.. -->
+                                                                              <!--왼쪽 서브 메뉴 클릭 했을때 이쪽 value값에 저장 하면 됩니다.-->
+                    
+
+
+                </div>
+
+            </section>
+
+            <footer id=indexFooter></footer>
+        </div>
+    </div>
+</body>
+
+</html>
