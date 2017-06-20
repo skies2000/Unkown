@@ -22,9 +22,8 @@
                    }
                }
             $('#indexNav a').click(function(){
-                alert($(this).val());
-                $('#pathCheck').val("testFile.html");
-                 var url = $('#pathCheck').val();
+            var url = $(this).next('input').val()
+                $('#pathCheck').val(url);
                 xhr = new XMLHttpRequest();
 	           xhr.open('get',url); // url요청 정보
 	           xhr.send(); // 서버에 전송
@@ -123,8 +122,10 @@
     <div id=allBody>
         <nav id='indexNav'>
 
-            <a href=# id=indexHome>홈</a>
-            <a href=# id=indexLabo>연구소</a>
+            <a href=# >홈</a>
+            <input type=hidden value="testFile.html">
+            <a href=# >연구소</a>
+            <input type=hidden value="testFile2.html">
             <a href=#>구매</a>
             <a href=#>생산</a>
             <a href=#>영업</a>
