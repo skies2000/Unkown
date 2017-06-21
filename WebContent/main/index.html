@@ -10,7 +10,7 @@
     <script>
         $(document).ready(
 			function(){
-                var url = $('#pathCheck').val();
+                var url = $('#pathCheck').val(); /* */
                 xhr = new XMLHttpRequest();
 	           xhr.open('get',url); // url요청 정보
 	           xhr.send(); // 서버에 전송
@@ -142,9 +142,7 @@
 
             <section id='indexSection'>
                 <div id='indexContent'>
-                   <input type="hidden" id='pathCheck' value="testFile.html"> <!--이곳에 insert할 경로/파일명이 들어 가면 됩니다.. -->
-                                                                              <!--왼쪽 서브 메뉴 클릭 했을때 이쪽 value값에 저장 하면 됩니다.-->
-                    
+                   <input type="hidden" id='pathCheck' value="testFile.html"> 
 
 
                 </div>
