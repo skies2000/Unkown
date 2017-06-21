@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html>
-
+<link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Roboto+Condensed|Shadows+Into+Light" rel="stylesheet">
 <head>
     <title>메인</title>
     <meta charset="UTF-8">
@@ -45,7 +45,7 @@
 
     <style>
         body{
-            background-color: black;
+            background-color: #030303;
         }
         * {
             box-sizing: border-box;
@@ -67,8 +67,9 @@
         #indexHeader a{
             display: inline-block;
             position: absolute;
-            right:0;
-            bottom: 0;
+            right:15px;
+            bottom: 44px;
+            font-family: 'Patrick Hand SC', cursive;
             
         }
         
@@ -88,6 +89,7 @@
             height: 100%;
             border: 1px solid maroon;
             background-color: rgb(41, 36, 36);
+            font-family: 'Patrick Hand SC', cursive;
             
         }
         #indexNav a{
@@ -113,6 +115,7 @@
          border : 1px solid black;
             background-color: black;
         }
+        
 
     </style>
 </head>
@@ -122,28 +125,28 @@
     <div id=allBody>
         <nav id='indexNav'>
 
-            <a href=# >홈</a>
+            <a href=# >HOME</a>
             <input type=hidden value="testFile.html">
-            <a href=# >연구소</a>
+            <a href=# >R&D</a>
             <input type=hidden value="testFile2.html">
-            <a href=#>구매</a>
+            <a href=#>PURCHASE</a>
             <input type=hidden value="testFile.html">
-            <a href=#>생산</a>
-            <a href=#>영업</a>
-            <a href=#>마이페이지</a>
-
+            <a href=#>PRODUCT</a>
+            <input type=hidden value="detailProduct.html">
+            <a href=#>SALES</a>
+            <a href=#>MYPAGE</a>
         </nav>
         <div id='mainBody'>
 
             <header id='indexHeader'>
-                <a href="#">logout</a>
+                <a href="#">LOGOUT</a>
             </header>
 
 
             <section id='indexSection'>
                 <div id='indexContent'>
-                   <input type="hidden" id='pathCheck' value="testFile.html"> 
 
+                   <input type="hidden" id='pathCheck' value="testFile.html"> 
 
                 </div>
 
