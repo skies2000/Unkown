@@ -6,11 +6,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
 		<style>
-        nav {    
+        #submenuNav {    
     display: block;
     text-align: center;
   }
-  nav ul {
+  #submenuNav ul {
     margin: 0;
     padding:0;
     list-style: none;
@@ -19,7 +19,7 @@
     display:block; 
     background: #111; 
     color:#fff; 
-    text-decoration: none;
+    text-decoration: none; 
     padding: .8em 1.8em;
     text-transform: uppercase;
     font-size: 80%;letter-spacing: 2px;
@@ -80,7 +80,7 @@
 }
 .nav > li:hover > ul {
   left: auto;
-  padding-top: 5px  ;
+  padding-top: 5px;
   min-width: 100%;
 }
 .nav > li li ul {  border-left:1px solid #fff;}
@@ -115,7 +115,7 @@ ent;
 	</head>
 
 	<body>
-<nav>
+<nav id=submenuNav>
   <ul class="nav">
     
     <li><a href="#">제품생산</a>
