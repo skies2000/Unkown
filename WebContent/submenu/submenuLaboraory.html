@@ -5,12 +5,42 @@
 		<title>Page Title</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
+		   <script src='../jq_lib/jquery-3.2.1.min.js'></script>
+    <script>
+        $(document).ready(
+			function(){
+                xhr = new XMLHttpRequest();
+	           xhr.open('get','../laboratory/laboratoryHome.html'); // url요청 정보
+	           xhr.send(); // 서버에 전송
+               var str='';
+               xhr.onreadystatechange=function(){
+                   if(xhr.readyState == 4 && xhr.status == 200){
+                       str = xhr.responseText;
+                       $('#laboratorResult').html(str);
+                   }
+               }
+            $('.nav a').click(function(){
+            var url = $(this).next('input').val();
+                xhr = new XMLHttpRequest();
+	           xhr.open('get',url); // url요청 정보
+	           xhr.send(); // 서버에 전송
+               var str='';
+               xhr.onreadystatechange=function(){
+                   if(xhr.readyState == 4 && xhr.status == 200){
+                       str = xhr.responseText;
+                       $('#laboratorResult').html(str);
+                   }
+               }
+            });
+            });
+    </script>
+		
 		<style>
-        nav {    
+        #submenuNav {    
     display: block;
     text-align: center;
   }
-  nav ul {
+  #submenuNav ul {
     margin: 0;
     padding:0;
     list-style: none;
@@ -107,31 +137,38 @@ ent;
 }
 
         </style>
-	</head>
+	</head> 
 
 	<body>
-<nav>
+<nav id=submenuNav>
   <ul class="nav">
-    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a>
+    <input type =hidden value="../laboratory/laboratoryHome.html"/>
+    </li>
+    
     <li><a href="#">제품</a>
       <ul>
-        <li><a href="#">등록</a></li>
-        <li><a href="#">상세</a></li>
+        <li><a href="#">등록</a>
+        <input type=hidden value="../laboratory/productInput.html"/>
+        </li>
+        
+        <li><a href="#">상세</a>
+        <input type=hidden value="../laboratory/productDetails.html"/>
+        </li>
       </ul>
     </li>
     <li><a href="#">자재</a>
       <ul>
-        <li><a href="#">등록</a></li>
-        <li><a href="#">상세</a></li>
+        <li><a href="#">등록</a>
+        <input type=hidden value="../laboratory/materialsInput.html"/>
+        </li>
+        <li><a href="#">상세</a>
+        <input type=hidden value="../laboratory/materialsDetails.html"/>
+        </li>
         
       </ul>
     </li>
-    <li><a href="#">조회</a>
-      <ul>
-        <li><a href="#">제품조회</a></li>
-        <li><a href="#">자재조회</a></li>
-      </ul>
-    </li>
+   
     
   </ul>
 </nav>

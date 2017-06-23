@@ -10,9 +10,8 @@
     <script>
         $(document).ready(
 			function(){
-                var url = $('#pathCheck').val(); /* */
                 xhr = new XMLHttpRequest();
-	           xhr.open('get',url); // url요청 정보
+	           xhr.open('get','home.html'); // url요청 정보
 	           xhr.send(); // 서버에 전송
                var str='';
                xhr.onreadystatechange=function(){
@@ -23,7 +22,6 @@
                }
             $('#indexNav a').click(function(){
             var url = $(this).next('input').val()
-                $('#pathCheck').val(url);
                 xhr = new XMLHttpRequest();
 	           xhr.open('get',url); // url요청 정보
 	           xhr.send(); // 서버에 전송
@@ -35,30 +33,29 @@
                    }
                }
             });
-                
-                
             });
     </script>
 
     <style>
-        body{
+        #indexbody{
             background-color: #030303;
         }
-        * {
+        #indexbody * {
             box-sizing: border-box;
             color:white;
             text-decoration: none;
+            font-size: 22px;
             
-        }
+        } 
         
         #allBody {
-            border: 1px solid red;
         }
         
         #indexHeader {
-            border: 1px solid white;
+            border: 1px solid #434141;
             height: 100px;
             position:relative;
+            background-color: #222;
             
         }
         #indexHeader a{
@@ -71,21 +68,20 @@
         }
         
         #indexSection {
-            border: 1px solid black;
         }
         
-        #indexFooter {
-            border: 1px solid yellow;
+        #indexFooter { 
+            border: 1px solid #434141;
             height: 100px;
+            background-color: #222;
         }
         
         #indexNav {
             position: fixed;
             
             width: 100px;
-            height: 100%;
-            border: 1px solid maroon;
-            background-color: rgb(41, 36, 36);
+            height: 98%;
+            background-color: #222;
             font-family: 'Patrick Hand SC', cursive;
             
         }
@@ -93,14 +89,20 @@
             display: inline-block;
             width: 90%;
             text-align: right;
-            background-color: rgb(41, 36, 36);
+            background-color: #222;
+            
+        }
+        #indexNav a:hover{
+            background-color: aqua;
             
         }
         
         #indexContent {
             width: 90%;
             margin: 0 auto;
-            border: 3px solid blue;
+            max-width: 900px;
+            border: 1px solid #aaa;
+            min-width: 350px;
         }
         
         #indexSection #indexContent img {
@@ -108,8 +110,8 @@
             width: 100%;
         }
         #mainBody{
-        margin-left: 100px;
-         border : 1px solid black;
+        margin-right:0;
+        margin-left: 103px;
             background-color: black;
         }
         
@@ -118,22 +120,20 @@
 </head>
 
 
-<body>
+<body id=indexbody>
     <div id=allBody>
         <nav id='indexNav'>
 
             <a href=# >HOME</a>
-            <input type=hidden value="testFile.html">
+            <input type=hidden value="home.html">
             <a href=# >R&D</a>
-            <input type=hidden value="../laboratory/laboratoryHome.html">
+            <input type=hidden value="../laboratory/laboratoryIndex.html">
             <a href=#>PURCHASE</a>
             <input type=hidden value="../purchase/purchase_home.html">
             <a href=#>PRODUCT</a>
             <input type=hidden value="../product/detailProduct.html">
             <a href=#>SALES</a>
             <input type=hidden value="../salse/detailSalse.html">
-            <a href=#>BUSINESS</a>
-            <input type=hidden value="../business/datail_business.html">
             <a href=#>MYPAGE</a>
         </nav>
         <div id='mainBody'>
@@ -146,7 +146,7 @@
             <section id='indexSection'>
                 <div id='indexContent'>
 
-                   <input type="hidden" id='pathCheck' value="testFile.html"> 
+                   <!-- <input type="hidden" id='pathCheck' value="testFile.html"> --> 
 
                 </div>
 
