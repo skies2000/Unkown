@@ -6,7 +6,9 @@
     <title>메인</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
+    <link rel='stylesheet' href='../category/category.css' />
     <script src='../jq_lib/jquery-3.2.1.min.js'></script>
+    <script src='../jq_lib/common.js'></script>
     <script>
         $(document).ready(
 			function(){
@@ -38,64 +40,60 @@
 
     <style>
         #indexbody{
-            background-color: #030303;
+            background-color: black;
         }
         #indexbody * {
             box-sizing: border-box;
             color:white;
-            text-decoration: none;
-            font-size: 22px;
-            
+            text-decoration: none;            
         } 
         
         #allBody {
         }
         
         #indexHeader {
-            border: 1px solid #434141;
-            height: 100px;
-            position:relative;
-            background-color: #222;
-            
+            text-align: right;
+            height: 30px;  
+            padding-top:10px;
+            margin-right: 20px;           
         }
-        #indexHeader a{
-            display: inline-block;
-            position: absolute;
-            right:15px;
-            bottom: 44px;
-            font-family: 'Patrick Hand SC', cursive;
-            
-        }
-        
+
         #indexSection {
         }
         
         #indexFooter { 
-            border: 1px solid #434141;
             height: 100px;
+            /*
             background-color: #222;
+            */
         }
         
         #indexNav {
+            padding-top: 45px;
             position: fixed;
-            
-            width: 100px;
+            width: 60px;
             height: 98%;
             background-color: #222;
-            font-family: 'Patrick Hand SC', cursive;
+            text-align: center;
+            line-height: 50px;
             
         }
+        /*
         #indexNav a{
             display: inline-block;
-            width: 90%;
-            text-align: right;
-            background-color: #222;
-            
+            width: 90%;           
+            background-color: #222;    
         }
-        #indexNav a:hover{
-            background-color: aqua;
-            
+        */
+
+        #indeximage{
+        transition: .5s ease;
+        backface-visibility: hidden;
         }
+        #indeximg:hover {
+        opacity:0.5;
+        filter:alpha(opacity=80); /* For IE8 and earlier */
+            }
         
         #indexContent {
             width: 90%;
@@ -109,11 +107,22 @@
             display: inline-block;
             width: 100%;
         }
+        
+        /* 이거 왜 먹여놓으신거지...(수정: 2017 06 26 /황주희)*/
+        /* 
         #mainBody{
         margin-right:0;
         margin-left: 103px;
-            background-color: black;
         }
+        */
+        
+
+        #category{
+            margin-top: 20px;
+            height: 70px;
+            /* background-color: aquamarine;  나중에 배경색 지우기*/
+        }
+
         
 
     </style>
@@ -123,25 +132,56 @@
 <body id=indexbody>
     <div id=allBody>
         <nav id='indexNav'>
-
-            <a href=# >HOME</a>
+            <a href=# ><img id='indeximg' src="../images/home.png"></a>
             <input type=hidden value="home.html">
-            <a href=# >R&D</a>
+            <a href=# ><img id='indeximg' src="../images/rnd.png"></a>
             <input type=hidden value="../laboratory/laboratoryIndex.html">
-            <a href=#>PURCHASE</a>
+            <a href=#><img id='indeximg' src="../images/purchase.png"></a>
             <input type=hidden value="../purchase/purchase_home.html">
-            <a href=#>PRODUCT</a>
+            <a href=#><img id='indeximg' src="../images/product.png"></a>
             <input type=hidden value="../product/detailProduct.html">
-            <a href=#>SALES</a>
+            <a href=#><img id='indeximg' src="../images/sales.png"></a>
             <input type=hidden value="../salse/detailSalse.html">
-            <a href=#>MYPAGE</a>
+            <a href=#><img id='indeximg' src="../images/mypage.png"></a>
         </nav>
         <div id='mainBody'>
 
             <header id='indexHeader'>
-                <a href="#">LOGOUT</a>
+                <a href="#"><img id='indeximg' src="../images/logout.png"></a>
             </header>
-
+            
+            <!--각 팀들 카테고리 들어갈 부분(수정:2017 06 26 / 황주희)-->
+            <div id='category'>
+              <div id='uipgMenuWrap'>
+				<div class='uipgMenu'>
+				<ul>
+				<li>
+				    <a href='javascript:;'>생산요청서<span></span></a>
+				    <ul>
+				    <li><a href='javascript:;'>조회</a></li>
+				    <li><a href='javascript:;'>작성</a></li>
+				    <li><a href='javascript:;'>상세</a></li>
+				    </ul>
+				</li>
+				<li><a href='javascript:;'>판매품의서<span></span></a>
+				    <ul>
+				    <li><a href='javascript:;'>조회</a></li>
+				    <li><a href='javascript:;'>작성</a></li>
+				    <li><a href='javascript:;'>상세</a></li>
+				    </ul>
+				</li>
+				<li><a href='javascript:;'>손익관리<span></span></a>
+				    <ul>
+				     <li><a href='javascript:;'>자세한손익관리</a></li>
+				     <li><a href='javascript:;'>판매내역관리</a></li>
+				     </ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+                
+                
+            </div>
 
             <section id='indexSection'>
                 <div id='indexContent'>

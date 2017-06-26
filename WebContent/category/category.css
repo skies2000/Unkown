@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: arial, tahoma;
+}
+#uipgMenuWrap {
+  margin: 0px auto;
+}
+#uipgMenuWrap .hover, #uipgMenuWrap li, #uipgMenuWrap li:before, #uipgMenuWrap a {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#uipgMenuWrap.uipgD {
+  width: 50%;
+  /*max-width:485px;*/
+}
+.uipgD .uipgMenu, .uipgD .uipgMenu ul {
+  float: left;
+  width: 70%;
+  display: block;
+}
+.uipgD .uipgMenu {
+  width: 100%;
+  height: 48px;
+}
+.uipgD .uipgMenu li {
+  font-size: 17px;
+  font-weight: bold;
+  min-height: 48px;
+  line-height: 48px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  float: left;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.uipgD .uipgMenu li a {
+  text-align: left;
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+}
+.uipgD .uipgMenu li a span {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  margin-left: -4px;
+  width: 0;
+  height: 0;
+  border: 4px transparent solid;
+  border-top-color: #373737;
+}
+.uipgD .uipgMenu li.hover a span, .uipgD .uipgMenu li.active a span {
+  border: 4px transparent solid;
+  border-top-color: #f59737;
+}
+.uipgD .uipgMenu li ul {
+  margin: 0;
+  padding: 35px 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  float: none;
+  width: auto;
+}
+.uipgD .uipgMenu li ul li {
+  min-height: 32px;
+  line-height: 32px;
+  border: 0;
+  font-size: 15px;
+  float: none;
+  padding: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  width: 100%;
+}
+/*
+.uipgMenu ul {
+  background-color: #2a2a2a;
+}
+*/
+.uipgMenu ul li {
+  color: #7e8389;
+}
+.uipgMenu ul li a {
+  color: #7e8389;
+}
+.uipgMenu ul li ul {
+  background-color: rgba(37, 37, 37,0.5);
+}
+.uipgMenu ul li ul li {
+  color: #7e8389;
+}
+.uipgMenu ul li ul li a {
+  color: #7e8389;
+}
+.uipgMenu ul li.hover, .uipgMenu ul li.active {
+  overflow: visible;
+}
+.uipgMenu ul li.hover ul li, .uipgMenu ul li.active ul li {
+  color: #7e8389;
+}
+.uipgMenu ul li.hover ul li a, .uipgMenu ul li.active ul li a {
+  color: #7e8389 !important;
+}
+.uipgMenu ul li.hover ul li.hover, .uipgMenu ul li.active ul li.hover {
+  background-color: #252525;
+  color: #f59737;
+}
+.uipgMenu ul li.hover ul li.hover a, .uipgMenu ul li.active ul li.hover a, .uipgMenu ul li.hover ul li.hover a:hover, .uipgMenu ul li.active ul li.hover a:hover {
+  color: #f59737 !important;
+}
+.uipgMenu ul li.hover ul li.active, .uipgMenu ul li.active ul li.active {
+  background-color: #252525;
+  color: #f59737;
+}
+.uipgMenu ul li.hover ul li.active a, .uipgMenu ul li.active ul li.active a, .uipgMenu ul li.hover ul li.active a:hover, .uipgMenu ul li.active ul li.active a:hover {
+  color: #f59737 !important;
+}
+.uipgMenu ul li.hover {
+  background-color: #1e1e1e;
+  color: #f59737;
+}
+.uipgMenu ul li.hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.uipgMenu ul li.hover a {
+  color: #f59737;
+}
+.uipgMenu ul li.active {
+  background-color: #1e1e1e;
+  color: #f59737;
+}
+.uipgMenu ul li.active a {
+  color: #f59737;
+}
