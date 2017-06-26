@@ -1,15 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
 		 <script src='../jq_lib/jquery-3.2.1.min.js'></script>
     <script>
         $(document).ready(
 			function(){
                 
                 xhr = new XMLHttpRequest();
-	           xhr.open('get','../submenu/submenuPurchase.html'); // url요청 정보
+	           xhr.open('get','../submenu/submenuSales.html'); // url요청 정보
 	           xhr.send(); // 서버에 전송
                var str='';
                xhr.onreadystatechange=function(){
@@ -21,19 +23,14 @@
             });
 		
         </script>
-        <style>
-        	#submenu{
-        /* display: inline-block;
-        position: absolute; *//*submenu위치 왼쪽으로 겹치게  */
-        
-    }
-</style>
-</head>
-<body>
-<div id='submenu'></div>
+    
+	</head>
+	<div id='submenu'></div>
+	
+    
+    <div id='SalesResult'></div>
 	<body>
    
-	<div id='purchaseResult'>
-	</div>
-</body>
+    
+	</body>
 </html>

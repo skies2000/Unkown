@@ -31,7 +31,7 @@
                        str = xhr.responseText;
                        $('#indexContent').html(str);
                    }
-               }
+               } 
             });
             });
     </script>
@@ -44,9 +44,12 @@
             box-sizing: border-box;
             color:white;
             text-decoration: none;
-            font-size: 22px;
             
-        } 
+            
+        }
+        #fontSize{
+        font-size: 22px;
+        }
         
         #allBody {
         }
@@ -105,10 +108,7 @@
             min-width: 350px;
         }
         
-        #indexSection #indexContent img {
-            display: inline-block;
-            width: 100%;
-        }
+         
         #mainBody{
         margin-right:0;
         margin-left: 103px;
@@ -122,23 +122,23 @@
 
 <body id=indexbody>
     <div id=allBody>
-        <nav id='indexNav'>
+        <nav id='indexNav' class='fontSize'>
 
             <a href=# >HOME</a>
             <input type=hidden value="home.html">
             <a href=# >R&D</a>
             <input type=hidden value="../laboratory/laboratoryIndex.html">
             <a href=#>PURCHASE</a>
-            <input type=hidden value="../purchase/purchase_home.html">
+            <input type=hidden value="../purchase/purchase_Index.html">
             <a href=#>PRODUCT</a>
-            <input type=hidden value="../product/detailProduct.html">
+            <input type=hidden value="../product/product_index.jsp">
             <a href=#>SALES</a>
-            <input type=hidden value="../salse/detailSalse.html">
+            <input type=hidden value="../salse/sales_index.html">
             <a href=#>MYPAGE</a>
         </nav>
         <div id='mainBody'>
 
-            <header id='indexHeader'>
+            <header id='indexHeader' class='fontSize'>
                 <a href="#">LOGOUT</a>
             </header>
 

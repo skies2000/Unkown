@@ -5,6 +5,37 @@
 		<title>Page Title</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
+		 <script>
+        $(document).ready(
+			function(){
+                xhr = new XMLHttpRequest();
+	           xhr.open('get','../product/product_home.jsp'); // url요청 정보
+	           xhr.send(); // 서버에 전송
+               var str='';
+               xhr.onreadystatechange=function(){
+                   if(xhr.readyState == 4 && xhr.status == 200){
+                       str = xhr.responseText;
+                       $('#productResult').html(str);
+                   }
+               }
+            $(".nav a[href='#']").click(function(){
+            	
+            var url = $(this).next('input').val();
+                xhr = new XMLHttpRequest();
+	           xhr.open('get',url); // url요청 정보
+	           xhr.send(); // 서버에 전송
+               var str='';
+               xhr.onreadystatechange=function(){
+                   if(xhr.readyState == 4 && xhr.status == 200){
+                       str = xhr.responseText;
+                       $('#productResult').html(str);
+                   }
+               }
+            });
+            });
+    </script>
+		
+		
 		<style>
         #submenuNav {    
     display: block;
@@ -117,29 +148,38 @@ ent;
 	<body>
 <nav id=submenuNav>
   <ul class="nav">
-    
-    <li><a href="#">제품생산</a>
-      <ul>
-        <li><a href="#">생산요청서 조회</a></li>
-        
-      </ul>
+    <li><a href="#">HOME</a>
+    <input type=hidden value="../product/product_home.jsp"/>
     </li>
     <li><a href="#">생산관리</a>
+    <input type=hidden value="../product/product_management.jsp"/>
       <ul>
-        <li><a href="#">생산요청서 조회</a></li>
-        <li><a href="#">효율</a>
+      <li><a href="#">생산오더 관리</a>
+        <input type=hidden value="../product/product_order.jsp"/></li>
+        <li><a href="#">생산요청서 조회</a>
+        <input type=hidden value="../product/product_request_list.jsp"/></li>
+        
+        <li><a href="#">생산효율 관리</a>
+        <input type=hidden value="../product/product_eff.jsp"/>
             <ul>
-                <li><a href="#">라인별 생산현황</a></li>
-                <li><a href="#">기간별 생산현황</a></li>
-                <li><a href="#">제품별 생산현황</a></li>
+                <li><a href="#">라인별 생산현황</a>
+                <input type=hidden value="../product/product_eff_result.jsp"/></li>
+                <li><a href="#">기간별 생산현황</a>
+                <input type=hidden value="../product/product_eff_result.jsp"/></li>
+                <li><a href="#">제품별 생산현황</a>
+                <input type=hidden value="../product/product_eff_result.jsp"/></li>
             </ul>       
         </li>
-      </ul>
+      </ul> 
     </li>
-    <li><a href="#">조회</a>
+    <li><a href="#">재고조회</a>
+    <input type=hidden value="../product/product_stock.jsp"/>
       <ul>
-        <li><a href="#">제품조회</a></li>
-        <li><a href="#">자재조회</a></li>
+        <li><a href="#">제품 재고 조회</a>
+        <input type=hidden value="../product/product_stock_product.jsp"/>
+        <li><a href="#">자재 재고 조회</a>
+        <input type=hidden value="../product/product_stock_material.jsp"/></li>
+        </li>
       </ul>
     </li>
     

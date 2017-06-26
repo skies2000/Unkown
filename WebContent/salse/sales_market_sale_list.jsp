@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-작성 상세
+판매품의서 조회
 </body>
 </html>
