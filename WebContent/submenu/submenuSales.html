@@ -10,7 +10,7 @@
         $(document).ready(
 			function(){
                 xhr = new XMLHttpRequest();
-	           xhr.open('get','../salse/sales_home.jsp'); // url요청 정보
+	           xhr.open('get','../sales/sales_home.jsp'); // url요청 정보
 	           xhr.send(); // 서버에 전송
                var str='';
                xhr.onreadystatechange=function(){
@@ -152,21 +152,21 @@ ent;
     
     
     <li><a href="#">HOME</a>
-      <input type=hidden value="../salse/sales_home.jsp"/>
+      <input type=hidden value="../sales/sales_home.jsp"/>
     </li>
     
     
     <li><a href="##">생산관리</a>
       <ul>
         <li><a href="#">생산요청서 조회</a>
-        <input type=hidden value="../salse/sales_market_req_list.jsp"/>
+        <input type=hidden value="../sales/sales_market_req_list.jsp"/>
         </li>
         
         <li><a href="#">생산요청서 작성</a>
-        <input type=hidden value="../salse/sales_market_req_input.jsp"/>
+        <input type=hidden value="../sales/sales_market_req_input.jsp"/>
         </li> 
         <li><a href="#">생산요청서 상세</a>
-        <input type=hidden value="../salse/sales_market_req_view.jsp"/>
+        <input type=hidden value="../sales/sales_market_req_view.jsp"/>
         </li>
       </ul>
     </li>
@@ -174,13 +174,13 @@ ent;
     <li><a href="##">판매관리</a>
       <ul>
         <li><a href="#">판매품의서 조회</a>
-        <input type=hidden value="../salse/sales_market_sale_list.jsp"/>
+        <input type=hidden value="../sales/sales_market_sale_list.jsp"/>
         </li>
         <li><a href="#">판매품의서 작성</a>
-        <input type=hidden value="../salse/sales_market_sale_input.jsp"/>
+        <input type=hidden value="../sales/sales_market_sale_input.jsp"/>
         </li>
         <li><a href="#">판매품의서 상세</a>
-        <input type=hidden value="../salse/sales_market_sale_view.jsp"/>
+        <input type=hidden value="../sales/sales_market_sale_view.jsp"/>
         </li>
       </ul>
     </li>
@@ -188,11 +188,11 @@ ent;
     <li><a href="##">손익,내역</a>
       <ul>
         <li><a href="#">손익관리</a>
-        <input type=hidden value="../salse/sales_profit_view.jsp"/>
+        <input type=hidden value="../sales/sales_profit_view.jsp"/>
         </li>
         
         <li><a href="#">판매 내역 관리</a>
-        <input type=hidden value="../salse/sales_profit_list.jsp"/>
+        <input type=hidden value="../sales/sales_profit_list.jsp"/>
         
         </li>
         
