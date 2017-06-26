@@ -6,9 +6,12 @@
     <title>메인</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
+    <link rel='stylesheet' href='../category/category.css' />
     <script src='../jq_lib/jquery-3.2.1.min.js'></script>
+    <script src='../jq_lib/common.js'></script>
     <script>
         $(document).ready(
+
 			function(){
                 xhr = new XMLHttpRequest();
 	           xhr.open('get','home.html'); // url요청 정보
@@ -38,67 +41,63 @@
 
     <style>
         #indexbody{
-            background-color: #030303;
+            background-color: black;
         }
         #indexbody * {
             box-sizing: border-box;
             color:white;
-            text-decoration: none;
-            
+            text-decoration: none;            
             
         }
-        #fontSize{
-        font-size: 22px;
-        }
+        
+
         
         #allBody {
         }
         
         #indexHeader {
-            border: 1px solid #434141;
-            height: 100px;
-            position:relative;
-            background-color: #222;
-            
+            text-align: right;
+            height: 30px;  
+            padding-top:10px;
+            margin-right: 20px;           
         }
-        #indexHeader a{
-            display: inline-block;
-            position: absolute;
-            right:15px;
-            bottom: 44px;
-            font-family: 'Patrick Hand SC', cursive;
-            
-        }
-        
+
         #indexSection {
         }
         
         #indexFooter { 
-            border: 1px solid #434141;
             height: 100px;
+            /*
             background-color: #222;
+            */
         }
         
         #indexNav {
+            padding-top: 45px;
             position: fixed;
-            
-            width: 100px;
+            width: 60px;
             height: 98%;
             background-color: #222;
-            font-family: 'Patrick Hand SC', cursive;
+            text-align: center;
+            line-height: 50px;
             
         }
+        /*
         #indexNav a{
             display: inline-block;
-            width: 90%;
-            text-align: right;
-            background-color: #222;
-            
+            width: 90%;           
+            background-color: #222;    
         }
-        #indexNav a:hover{
-            background-color: aqua;
-            
+        */
+
+        #indeximage{
+        transition: .5s ease;
+        backface-visibility: hidden;
         }
+        #indeximg:hover {
+        opacity:0.5;
+        filter:alpha(opacity=80); /* For IE8 and earlier */
+            }
         
         #indexContent {
             width: 90%;
@@ -108,12 +107,27 @@
             min-width: 350px;
         }
         
-         
+
+        #indexSection #indexContent img {
+            display: inline-block;
+            width: 100%;
+        }
+        
+        /* 이거 왜 먹여놓으신거지...(수정: 2017 06 26 /황주희)*/
+         /*이게 없으면 왼쪽 메뉴 속으로 컨텐츠들이 들어가 버림*/
         #mainBody{
         margin-right:0;
-        margin-left: 103px;
-            background-color: black;
+        margin-left: 65px;
         }
+        
+        
+
+        #category{
+            margin-top: 20px;
+            height: 70px;
+            /* background-color: aquamarine;  나중에 배경색 지우기*/
+        }
+
         
 
     </style>
@@ -122,26 +136,30 @@
 
 <body id=indexbody>
     <div id=allBody>
-        <nav id='indexNav' class='fontSize'>
 
-            <a href=# >HOME</a>
+        <nav id='indexNav'>
+            <a href=# ><img id='indeximg' src="../images/home.png"></a>
             <input type=hidden value="home.html">
-            <a href=# >R&D</a>
-            <input type=hidden value="../laboratory/laboratoryIndex.html">
-            <a href=#>PURCHASE</a>
+            <a href=# ><img id='indeximg' src="../images/rnd.png"></a>
+            <input type='hidden' value="../laboratory/laboratoryIndex.html">
+            <a href=#><img id='indeximg' src="../images/purchase.png"></a>
             <input type=hidden value="../purchase/purchase_Index.html">
-            <a href=#>PRODUCT</a>
+            <a href=#><img id='indeximg' src="../images/product.png"></a>
             <input type=hidden value="../product/product_index.jsp">
-            <a href=#>SALES</a>
+            <a href=#><img id='indeximg' src="../images/sales.png"></a>
             <input type=hidden value="../salse/sales_index.html">
-            <a href=#>MYPAGE</a>
+            <a href=#><img id='indeximg' src="../images/mypage.png"></a>
         </nav>
         <div id='mainBody'>
 
-            <header id='indexHeader' class='fontSize'>
-                <a href="#">LOGOUT</a>
+            <header id='indexHeader'>
+                <a href="#"><img id='indeximg' src="../images/logout.png"></a>
             </header>
-
+            
+            <!--각 팀들 카테고리 들어갈 부분(수정:2017 06 26 / 황주희)-->
+            <div id='category'>
+			
+            </div>
 
             <section id='indexSection'>
                 <div id='indexContent'>

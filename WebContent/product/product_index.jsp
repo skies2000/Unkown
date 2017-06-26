@@ -14,27 +14,19 @@
 			function(){
                 
                 xhr = new XMLHttpRequest();
-	           xhr.open('get','../submenu/submenuProduct.html'); // url요청 정보
+	           xhr.open('get','../category/submenuProduct.html'); // url요청 정보
 	           xhr.send(); // 서버에 전송
                var str='';
                xhr.onreadystatechange=function(){
                    if(xhr.readyState == 4 && xhr.status == 200){
                        str = xhr.responseText;
-                       $('#submenu').html(str);
+                       $('#category').html(str);
                    }
                }
             });
 		
-</script>
-<style>
-    #submenuProdcut {
-        display: inline-block;
-        position: absolute;
-        
-    }
-</style>
+</script> 
 </head>
-<div id='submenu'></div>
 
 <div id='productResult'></div>
 <body>
