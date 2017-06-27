@@ -26,7 +26,7 @@
             var url = $(this).next('input').val();
                 xhr = new XMLHttpRequest();
 	           xhr.open('get',url); // url요청 정보
-	           xhr.send(); // 서버에 전송
+	           xhr.send(); // 서버에 전송 
                var str='';
                xhr.onreadystatechange=function(){
                    if(xhr.readyState == 4 && xhr.status == 200){
