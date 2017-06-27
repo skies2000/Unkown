@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<!--  참고용!-->
+<!-- <mapper namespace="board"> -->
+ 
+<!--    <resultMap type="bean.BoardVo" id="boardMap"/>    -->
+
+<!--    <insert id='brd_insert' parameterType='bean.BoardVo'> -->
+<!--       insert all -->
+      
+<!--          into board(serial, mDate, worker, subject, content, hit, grp, deep) -->
+<!--          values(seq_board_serial.nextval, sysdate, #{subject}, #{worker}, #{content},  -->
+<!--                    0, seq_board_serial.currval, seq_board_serial.currval ) -->
+         
+<!--          <if test="attfile != null"> -->
+<!--             <foreach collection="attfile" item='data'> -->
+<!--                into board_att(serial, pserial, attfile) -->
+<!--                values(seq_board_att_serial.nextval, seq_board_serial.currval,#{data}) -->
+<!--             </foreach>          -->
+<!--          </if> -->
+         
+<!--       select * from dual       -->
+   
+   
+   
+   
+<!--    </insert>  -->
+ 
+
+<!-- </mapper> -->
