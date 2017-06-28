@@ -1,0 +1,115 @@
+@CHARSET "EUC-KR";
+
+   #headyyh{
+            border-bottom:3px solid #dedede;
+            margin-bottom: 50px;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+        #titleyyh {
+            display: inline-block;
+            font-size: 25pt;
+            margin-right: 70px;
+        }
+        
+        #body {
+          
+        }
+        
+        #startdateyyh,
+        #enddateyyh {
+            width: 80px;
+            height: 25px;
+            border-radius: 7px;
+        }
+        
+        #inputdateyyh {
+            color: darkgrey;
+            height: 25px;
+        }
+        
+        #findStryyh {
+            margin-left: 10px;
+            height: 25px;
+            border-radius: 7px;
+            color: black;
+            width: 150px;
+            text-align: center;
+            color: gray;
+        }
+        
+      
+        
+       .myButton {
+            -moz-box-shadow: inset 0px 1px 3px 0px #91b8b3;
+            -webkit-box-shadow: inset 0px 1px 3px 0px #91b8b3;
+            box-shadow: inset 0px 1px 3px 0px #91b8b3;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+            background: -moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+            background: -webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+            background: -o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+            background: -ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+            background: linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c', GradientType=0);
+            background-color: #768d87;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            border: 1px solid #566963;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: bold;
+            /*padding: 11px 23px;*/
+            text-decoration: none;
+            text-shadow: 0px -1px 0px #2b665e;
+            text-align: center;
+            height: 25px;
+            width: 50px;
+        }
+        
+        .myButton:hover {
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+            background: -moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+            background: -webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+            background: -o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+            background: -ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+            background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87', GradientType=0);
+            background-color: #6c7c7c;
+        }
+        
+        .myButton:active {
+            position: relative;
+            top: 1px;
+        }
+        
+        #listcate{border-bottom:1px solid white;width:100%;text-align: center}
+        #listcontent{margin-top: 10px; width:100%;text-align:center; background-color: gray; }
+        
+        #listcontent:hover{
+            background-color: darkslategrey;
+        }
+    
+        
+        .dcode{display: inline-block; width: 10%;}
+        .dcate{display: inline-block; width: 15%;}
+        .dsubject{display: inline-block; width: 30%;}
+        .dwirtedate{display: inline-block; width: 10%;}
+        .denddate{display: inline-block; width: 10%;}
+        .dwriter{display: inline-block; width: 7%;}
+        .dstatus{display: inline-block; width: 10%;}
+         
+        #listcate{
+            font-size: 11pt;
+        }
+        #listcate > span {
+            
+        }
+        #bottom {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-left: 44%;
+        }
