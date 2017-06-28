@@ -1,0 +1,226 @@
+@CHARSET "EUC-KR";
+
+	/* 전체 바디 */
+#body{
+	border: 1px solid white;
+}
+	/* -----------------헤드------------------- */
+#head{
+	height : 150px;
+	width : 100%;
+	border-bottom: 1px solid white;
+}
+#head1{
+	border-right:1px solid white;
+    height : 150px;
+	width : 20%;
+    float: left;
+}
+#head2{
+	border-right:1px solid white;
+    height : 150px;
+	width : 55%;
+    float: left;
+    padding-top : 45px;
+    text-align:center;
+    font-size : 50px;
+    }
+#head3{
+    height : 150px;
+	width : 25%;
+    float: left;
+}
+#head3 div {
+	height:50px;
+}
+#head31{
+	border-bottom:1px solid white;
+	border-right:1px solid white;
+	width : 35%;
+    float: left;
+    padding-top : 11px;
+    text-align:center;
+}
+#head32{
+	border-bottom:1px solid white;
+	width : 65%;
+    float: left;
+    padding-top : 11px;
+    text-align:center;
+}
+	/* -----------------결재칸------------------- */
+#sign{
+	height : 125px;
+	width : 100%;
+}
+#sign1{
+	border-right:1px solid white;
+	height : 125px; 
+	width : 70%;
+	float: left;
+	text-align: center;
+	padding : 50px;
+	font-size: 20px;
+}
+#sign2{
+	height : 125px;
+	width : 30%;
+	float: left;
+}
+#appro{
+	
+	writing-mode: tb-rl;
+	padding-right : 7px;
+	display:table-cell; 
+	text-align:center;
+	 vertical-align:middle;
+	 width: 13%;
+	 float: left;
+	 height : 125px;
+}
+#writer, #appro1, #appro2{
+	border-bottom:1px solid white;
+	border-left:1px solid white;
+	width : 29%;
+	float: left;
+	height : 25px;
+	text-align: center;
+}
+#date1, #date2, #date3{
+	width : 29%;
+	border : 1px solid white;
+	float: left;
+	font-size : 13px;
+	height : 25px;
+	text-align: center;
+	padding: 3px;
+}
+#stamp1, #stamp2, #stamp3{
+	border-left:1px solid white;
+	height : 75px;
+	width : 29%;
+	float: left;
+}
+	/* -----------------분류칸------------------- */
+#classify{
+	
+	height : 70px;
+	width : 100%;
+	border : 1px solid white;
+}
+
+select  {
+	width: 150px;
+	height: 30px;
+	padding-left: 10px;
+	font-size: 18px;
+	color: black;
+	border: 1px solid white;
+	border-radius: 3px;
+	outline:none;
+	background: black;
+	
+	}
+#sel1, #sel2{
+	margin-left : 100px;
+	padding : 18px;
+	float : left;
+}
+#add{
+	margin-left : 100px;
+	padding : 25px;
+	float : left;
+}
+
+ #sl_btnInput{
+	background-color: black;
+	border: 1px solid white;
+	font-size: 13px;
+	width: 50px;
+	cursor: pointer;
+}   
+	/* -----------------카테고리------------------- */
+#subject{
+	border-bottom : 1px solid white;
+	height : 50px;
+	width : 100%;
+}
+#code{
+	display: inline-block;
+	height : 50px;
+	width : 80px;
+	text-align:center;
+	padding-top : 14px;
+}
+#codeName{
+	display: inline-block;
+	height : 40px;
+	width : 140px;
+	text-align:center;
+	padding : 14px;
+}
+#custom{
+	display: inline-block;
+	height : 50px;
+	width : 100px;
+	text-align:center;
+	padding : 14px;
+}
+#ea{
+	display: inline-block;
+	height : 50px;
+	width : 70px;
+	text-align:center;
+	padding : 14px;
+}
+#unit{
+	display: inline-block;
+	height : 50px;
+	width : 120px;
+	text-align:center;
+	padding : 14px;
+}
+#total{
+	display: inline-block;
+	height : 50px;
+	width : 150px;
+	text-align:center;
+	padding : 14px;
+}
+#saledate{
+	display: inline-block;
+	height : 50px;
+	width : 150px;
+	text-align:center;
+	padding : 14px;
+}
+	/* -----------------판매내역내용------------------- */
+#sl_content{
+	width : 100%;
+	font-size : 13px;
+	position : relative;
+}
+
+#del{
+	display: inline-block;
+	cursor: pointer;
+	height : 50px;
+	width : 50px;
+	text-align:center;
+	padding-top : 15px;
+	font-size: 12px;
+}
+/* -----------------작성완료 버튼------------------- */
+#sendBtn{
+	padding : 10px;
+	margin-left: 400px;
+}
+
+ #sl_btnSend{
+ 	height : 30px;
+	background-color: black;
+	border: 1px solid white; 
+	font-size: 13px;
+	width: 70px;
+	cursor: pointer; /* 글씨위에만 커서 올라가게 수정하기~!@ */
+}  
