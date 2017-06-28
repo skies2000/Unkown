@@ -1,0 +1,85 @@
+@CHARSET "EUC-KR";
+
+/* ----------------------head----------------------------- */
+#head{
+	border-bottom: 1px solid white;
+	height: 60px;
+}
+#title{
+	height: 60px;
+	font-size: 30px;
+	padding-left: 10px;
+	padding-top: 10px;
+	width : 60%;
+	float: left;
+	
+}
+#finStr{
+	width : 25%;
+	float: left;
+	height: 60px;
+}
+#txtFind{
+	margin-top : 20px;
+	margin-left : 40px;
+	height: 25px;
+}
+#findBtn{
+	height: 60px;
+	width : 15%;
+	float: left;
+}
+#btnFind{
+	height : 25px;
+	background-color: black;
+	border: 1px solid white; 
+	font-size: 13px;
+	width: 70px;
+	cursor: pointer; 
+	padding: 3px;
+	margin-top : 20px;
+}
+/* ----------------------list_title----------------------------- */
+
+#list_title{
+	height: 50px;
+	padding-top: 20px;
+	border-bottom: 1px solid white;
+	margin-bottom: 10px;
+}
+#docNum{
+	margin-left : 20px;
+	display : inline-block;
+	width : 140px;
+	text-align: center;
+}
+#doctype{
+	display : inline-block;
+	width : 140px;
+	text-align: center;
+}
+#docsub{
+	display : inline-block;
+	width : 200px;
+	text-align: center;
+}
+#docdate{
+	display : inline-block;
+	width : 180px;
+	text-align: center;
+}
+#docwriter{
+	display : inline-block;
+	width : 100px;
+	text-align: center;
+}
+#docstatus{
+	display : inline-block;
+	width : 80px;
+	text-align: center;
+}
+
+/* ----------------------list----------------------------- */
+#list{
+	font-size: 14px;
+}
