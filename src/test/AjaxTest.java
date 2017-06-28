@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.cglib.proxy.Dispatcher;
 
+import com.oreilly.servlet.MultipartRequest;
+
 /**
  * Servlet implementation class AjaxTest
  */
@@ -22,6 +24,8 @@ public class AjaxTest extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
+	
+	
     public AjaxTest() {
     }
 
@@ -39,6 +43,20 @@ public class AjaxTest extends HttpServlet {
 		req.setCharacterEncoding("UTF-8");
 		resp.setContentType("text/html;charset=utf-8");
 		RequestDispatcher dispatcher = null;
+		MultipartRequest mul = null;
+		 
+		String uploadPath = req.getRealPath("/upload/").replaceAll("\\", "/");
+		System.out.println(uploadPath);
+		
+		try {
+			
+		} catch (Exception e) {
+			//mul = new MultipartRequest(request, saveDirectory)
+		}
+		
+		
+		
+		
 		System.out.println("ㅎㅎㅎ");
 		System.out.println(req.getParameter("subject"));
 		
