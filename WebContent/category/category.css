@@ -33,7 +33,7 @@ body {
   height: 48px;
 }
 .uipgD .uipgMenu li {
-  font-size: 17px;
+  /*font-size: 17px;*/
   font-weight: bold;
   min-height: 48px;
   line-height: 48px;
@@ -80,8 +80,8 @@ body {
   width: auto;
 }
 .uipgD .uipgMenu li ul li {
-  min-height: 32px;
-  line-height: 32px;
+  min-height: 25px;
+  line-height: 25px;
   border: 0;
   font-size: 15px;
   float: none;
@@ -96,46 +96,46 @@ body {
 }
 */
 .uipgMenu ul li {
-  color: #7e8389;
+  color: #fff;
 }
 .uipgMenu ul li a {
-  color: #7e8389;
+  color: #fff;
 }
 .uipgMenu ul li ul {
-  background-color: rgba(37, 37, 37,0.5);
+  background-color: rgba(37, 37, 37,0.8);
 }
 .uipgMenu ul li ul li {
-  color: #7e8389;
+  color: #fff;
 }
 .uipgMenu ul li ul li a {
-  color: #7e8389;
+  color: #fff;
 }
 .uipgMenu ul li.hover, .uipgMenu ul li.active {
   overflow: visible;
 }
 .uipgMenu ul li.hover ul li, .uipgMenu ul li.active ul li {
-  color: #7e8389;
+  color: #fff;
 }
 .uipgMenu ul li.hover ul li a, .uipgMenu ul li.active ul li a {
-  color: #7e8389 !important;
+  color: #fff !important;
 }
 .uipgMenu ul li.hover ul li.hover, .uipgMenu ul li.active ul li.hover {
   background-color: #252525;
-  color: #f59737;
+  color: #7e8389;
 }
 .uipgMenu ul li.hover ul li.hover a, .uipgMenu ul li.active ul li.hover a, .uipgMenu ul li.hover ul li.hover a:hover, .uipgMenu ul li.active ul li.hover a:hover {
-  color: #f59737 !important;
+  color: #7e8389 !important;
 }
 .uipgMenu ul li.hover ul li.active, .uipgMenu ul li.active ul li.active {
   background-color: #252525;
-  color: #f59737;
+  color: #7e8389;
 }
 .uipgMenu ul li.hover ul li.active a, .uipgMenu ul li.active ul li.active a, .uipgMenu ul li.hover ul li.active a:hover, .uipgMenu ul li.active ul li.active a:hover {
-  color: #f59737 !important;
+  color: #7e8389 !important;
 }
 .uipgMenu ul li.hover {
   background-color: #1e1e1e;
-  color: #f59737;
+  color: #7e8389;
 }
 .uipgMenu ul li.hover ul {
   display: block;
@@ -143,12 +143,12 @@ body {
   visibility: visible;
 }
 .uipgMenu ul li.hover a {
-  color: #f59737;
+  color: #7e8389;
 }
 .uipgMenu ul li.active {
   background-color: #1e1e1e;
-  color: #f59737;
+  color: #7e8389;
 }
 .uipgMenu ul li.active a {
-  color: #f59737;
+  color: #7e8389;
 }
