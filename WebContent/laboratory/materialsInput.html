@@ -5,9 +5,52 @@
 		<title>Page Title</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
+		
+		<script>
+			$('#materialInputSubmit').click(function(){
+            var xhr = new XMLHttpRequest();
+            var form = document.getElementById("mat_frm");
+             var formData = new FormData(form);
+             xhr.open("post","aaa.ja");
+            xhr.send(formData);
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState == 4 && xhr.status == 200){
+                    str = xhr.responseText;
+                    $('#ajaxTest').html(str);
+                }
+            }
+				
+			});
+             
+        </script>
+		
 	</head>
 
 	<body>
-재고 입력
+<h2>자재등록</h2><hr/>
+<form  id="mat_frm" method="post" enctype="multipart/form-data">
+    
+    <label>문서제목</label><input type='text' name="subject"/>
+    <p/>
+    <label>자재명</label><input type='text' />
+    <p/>
+    <label>자재종류</label>
+    <select>
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option> 
+        <option value="">4</option>
+        <option value="">5</option>
+        <option value="">6</option>
+    </select>
+    <p/> 
+    <input type='button' value="문서 내용 입력"/>
+    <input type='button' value="사진 첨부"/>
+    <p/>
+    
+    <input type='button' value='등록' id='materialInputSubmit'/>
+</form>
+<div id=ajaxTest></div>
+
 	</body>
 </html>

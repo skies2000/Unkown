@@ -11,6 +11,7 @@
     <script src='../jq_lib/common.js'></script>
     <script>
         $(document).ready(
+
 			function(){
                 xhr = new XMLHttpRequest();
 	           xhr.open('get','home.html'); // url요청 정보
@@ -33,7 +34,7 @@
                        str = xhr.responseText;
                        $('#indexContent').html(str);
                    }
-               }
+               } 
             });
             });
     </script>
@@ -45,7 +46,6 @@
         #indexbody * {
             box-sizing: border-box;
             color:white;
-
             text-decoration: none;            
             
         }
@@ -103,22 +103,21 @@
             width: 90%;
             margin: 0 auto;
             max-width: 900px;
-            border: 1px solid #aaa;
+            /*(수정: 2017 06 28 /황주희)
+            border: 1px solid #aaa;*/
             min-width: 350px;
         }
         
-        #indexSection #indexContent img {
-            display: inline-block;
-            width: 100%;
-        }
+
+        
         
         /* 이거 왜 먹여놓으신거지...(수정: 2017 06 26 /황주희)*/
-        /* 
+         /*이게 없으면 왼쪽 메뉴 속으로 컨텐츠들이 들어가 버림*/
         #mainBody{
         margin-right:0;
-        margin-left: 103px;
+        margin-left: 65px;
         }
-        */
+        
         
 
         #category{
@@ -135,17 +134,18 @@
 
 <body id=indexbody>
     <div id=allBody>
+ 
         <nav id='indexNav'>
             <a href=# ><img id='indeximg' src="../images/home.png"></a>
             <input type=hidden value="home.html">
             <a href=# ><img id='indeximg' src="../images/rnd.png"></a>
-            <input type=hidden value="../laboratory/laboratoryIndex.html">
+            <input type='hidden' value="../laboratory/laboratoryIndex.html">
             <a href=#><img id='indeximg' src="../images/purchase.png"></a>
-            <input type=hidden value="../purchase/purchase_home.html">
+            <input type=hidden value="../purchase/purchase_Index.html">
             <a href=#><img id='indeximg' src="../images/product.png"></a>
-            <input type=hidden value="../product/detailProduct.html">
+            <input type=hidden value="../product/product_index.jsp">
             <a href=#><img id='indeximg' src="../images/sales.png"></a>
-            <input type=hidden value="../salse/detailSalse.html">
+            <input type=hidden value="../sales/sales_index.html">
             <a href=#><img id='indeximg' src="../images/mypage.png"></a>
         </nav>
         <div id='mainBody'>
@@ -156,35 +156,7 @@
             
             <!--각 팀들 카테고리 들어갈 부분(수정:2017 06 26 / 황주희)-->
             <div id='category'>
-              <div id='uipgMenuWrap'>
-				<div class='uipgMenu'>
-				<ul>
-				<li>
-				    <a href='javascript:;'>생산요청서<span></span></a>
-				    <ul>
-				    <li><a href='javascript:;'>조회</a></li>
-				    <li><a href='javascript:;'>작성</a></li>
-				    <li><a href='javascript:;'>상세</a></li>
-				    </ul>
-				</li>
-				<li><a href='javascript:;'>판매품의서<span></span></a>
-				    <ul>
-				    <li><a href='javascript:;'>조회</a></li>
-				    <li><a href='javascript:;'>작성</a></li>
-				    <li><a href='javascript:;'>상세</a></li>
-				    </ul>
-				</li>
-				<li><a href='javascript:;'>손익관리<span></span></a>
-				    <ul>
-				     <li><a href='javascript:;'>자세한손익관리</a></li>
-				     <li><a href='javascript:;'>판매내역관리</a></li>
-				     </ul>
-				</li>
-			</ul>
-		</div>
-	</div>
-                
-                
+			
             </div>
 
             <section id='indexSection'>

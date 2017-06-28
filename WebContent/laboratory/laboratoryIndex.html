@@ -11,23 +11,24 @@
 			function(){
                 
                 xhr = new XMLHttpRequest();
-	           xhr.open('get','../submenu/submenuLaboraory.html'); // url요청 정보
+	           xhr.open('get','../category/submenuLaboraory.html'); // url요청 정보
 	           xhr.send(); // 서버에 전송
                var str='';
                xhr.onreadystatechange=function(){
                    if(xhr.readyState == 4 && xhr.status == 200){
                        str = xhr.responseText;
-                       $('#submenu').html(str);
+                       $('#category').html(str);
                    }
                }
             });
         </script>
         <style>
-    
-</style>
+    #laboratorResult *{
+    color : yellow;
+    }
+</style> 
 	</head>
     
-    <div id=submenu></div>
 	<body>
         <div id=laboratorResult></div>
 

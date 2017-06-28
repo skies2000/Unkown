@@ -19,7 +19,10 @@
                        $('#purchaseResult').html(str);
                    }
                }
-            $('.nav a').click(function(){
+            $(".nav a[href='#']").click(function(){
+            	
+            	
+            	
             var url = $(this).next('input').val();
                 xhr = new XMLHttpRequest();
 	           xhr.open('get',url); // url요청 정보
@@ -146,28 +149,30 @@ ent;
 	<body>
 <nav id=submenuNav>
   <ul class="nav">
-    <li><a href="#">Home</a>
-    <input type =hidden value="../laboratory/laboratoryHome.html"/>
+    <li><a href="#">조회</a>
+    <input type =hidden value="../purchase/purchase_home.html"/>
     </li>
     
-    <li><a href="#">제품</a>
+    <li><a href="##">보고서</a>
       <ul>
-        <li><a href="#">등록</a>
-        <input type=hidden value="../laboratory/productInput.html"/>
+        <li><a href="#">보고서 작성</a>
+        <input type=hidden value="../purchase/purchase_Input.html"/>
         </li>
         
-        <li><a href="#">상세</a>
-        <input type=hidden value="../laboratory/productDetails.html"/>
+        <li><a href="#">작성 상세</a>
+        <input type=hidden value="../purchase/purchase_View.html"/>
+        </li>
+        <li><a href="#">보고서 관리</a>
+        <input type=hidden value="../purchase/purchase_ReportList.html"/>
+        <li><a href="#">보고서 상세</a>
+        <input type=hidden value="../purchase/purchase_ReportView.html"/>
         </li>
       </ul>
     </li>
-    <li><a href="#">자재</a>
+    <li><a href="##">자재</a>
       <ul>
-        <li><a href="#">등록</a>
-        <input type=hidden value="../laboratory/materialsInput.html"/>
-        </li>
-        <li><a href="#">상세</a>
-        <input type=hidden value="../laboratory/materialsDetails.html"/>
+        <li><a href="#">자재 상세</a>
+        <input type=hidden value="../purchase/purchase_View.html"/>
         </li>
         
       </ul>

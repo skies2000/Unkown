@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+		 <script src='../jq_lib/jquery-3.2.1.min.js'></script>
+    <script>
+        $(document).ready(
+			function(){
+                
+                xhr = new XMLHttpRequest();
+	           xhr.open('get','../category/submenuPurchase.html'); // url요청 정보
+	           xhr.send(); // 서버에 전송
+               var str='';
+               xhr.onreadystatechange=function(){
+                   if(xhr.readyState == 4 && xhr.status == 200){
+                       str = xhr.responseText;
+                       $('#category').html(str);
+                   }
+               }
+            });
+		
+        </script>
+        <style>
+        	#submenu{
+        /* display: inline-block;
+        position: absolute; *//*submenu위치 왼쪽으로 겹치게  */
+        
+    }
+</style>
+</head>
+<body>
+   
+	<div id='purchaseResult'>
+	</div>
+</body>
+</html>
+    
