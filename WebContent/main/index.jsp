@@ -141,17 +141,22 @@
         <nav id='indexNav'>
             <a href=# ><img id='indeximg' src="../images/home.png"></a>
             <!-- <input type=hidden value="home.html"> -->
+            
             <a href="index.jsp?inc=../laboratory/laboratoryIndex.jsp" ><img id='indeximg' src="../images/rnd.png"></a>
             <!-- <input type='hidden' value="../laboratory/laboratoryIndex.html"> -->
+            
             <a href=#><img id='indeximg' src="../images/purchase.png"></a>
             <!-- <input type=hidden value="../purchase/purchase_Index.html"> -->
-            <a href=#><img id='indeximg' src="../images/product.png"></a>
+            
+            <a href="index.jsp?inc=../product/product_home.jsp" ><img id='indeximg' src="../images/product.png"></a>
             <!-- <input type=hidden value="../product/product_index.jsp"> -->
+            
             <a href=#><img id='indeximg' src="../images/sales.png"></a>
             <!-- <input type=hidden value="../sales/sales_index.html"> -->
+            
             <a href=#><img id='indeximg' src="../images/mypage.png"></a>
         </nav>
-        <div id='mainBody'>
+    <div id='mainBody'>
 
             <header id='indexHeader'>
                 <a href="#"><img id='indeximg' src="../images/logout.png"></a>

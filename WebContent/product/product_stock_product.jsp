@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-    <script>
+<!--     <script>
 				
 				$('#product_stock_p_view_go').click(function(){
 					
@@ -20,13 +20,22 @@
                    }
                }
             });
-    </script>
+    </script> -->
 
 
 </head>
 <body>
-제품 재고 조회<br/>
 
-<a href=# id='product_stock_p_view_go'>상세 보기</a>
+	<div id=category>
+		<jsp:include page="../category/submenuProduct.jsp"></jsp:include>
+	</div>
+	
+	<div id='productResult'>
+		제품 재고 조회<br/>
+		<a href=# id='index.jsp?inc=../product/product_stock_p_view.jsp'>상세 보기</a>
+	</div>
+
+
+
 </body>
 </html>
