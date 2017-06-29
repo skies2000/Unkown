@@ -2,135 +2,158 @@
 
 <html>
 	<head>
+
     <title>Page Title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
-
     <style>
-        #pInput * {
-            color: black;
+    #piBody #title {
+            padding-bottom: 5%;
+            font-size: 30px;
+            margin-left: 20%;
         }
         
-        #pInput label,
-        #pInput input[type='file'] {
-            color: #eb9d9d;
-        }
-        
-        #pInput .commonSize {
-            box-sizing: border-box;
-            width: 200px;
-            height: 30px;
-            margin: 0;
-            margin-bottom: 3px;
-            display: inline-block;
-            padding: 3px;
-            text-align: center;
-        }
-        
-        #hrCss {
-            color: gray;
-        }
-        
-        #pInput>h2 {
-            text-align: center;
+        #piBody input[type='text'],
+        #piBody select *,
+        #piBody select,
+        #piBody input[type='file'] {
             color: white;
-            border-bottom: 2px solid gray;
-            margin-bottom: 2px;
-            padding-bottom: 2px;
+            background-color: black;
+            margin: 5px;
         }
         
-        select * ,select{
-            text-align: center;
+        #piBody table,
+        #piBody th,
+        #piBody td {
+            border: 1px solid white;
+            border-spacing: 0px;
         }
         
-        .piBtn {
-            -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
-            -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
-            box-shadow: inset 0px 1px 0px 0px #ffffff;
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
-            background: -moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
-            background: -webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
-            background: -o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
-            background: -ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
-            background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9', GradientType=0);
-            background-color: #f9f9f9;
+        #piBody a {
+            margin: 5px;
+        }
+        
+        #piBody .buttonBoder {
+            border: 1px solid white;
+            margin-left: 71%;
+            margin-top: 3%;
+        }
+        
+        #piBody {
+            margin-left 50%;
+            margin-right 50% width: 800px;
+            
+        }
+        
+        #piBody table {
+            width: 60%;
+            height: 100px;
+            margin: auto;
+        }
+        
+        .myButton {
+            -moz-box-shadow: inset 0px 1px 0px 0px #000000;
+            -webkit-box-shadow: inset 0px 1px 0px 0px #000000;
+            box-shadow: inset 0px 1px 0px 0px #000000;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #000000));
+            background: -moz-linear-gradient(top, #000000 5%, #000000 100%);
+            background: -webkit-linear-gradient(top, #000000 5%, #000000 100%);
+            background: -o-linear-gradient(top, #000000 5%, #000000 100%);
+            background: -ms-linear-gradient(top, #000000 5%, #000000 100%);
+            background: linear-gradient(to bottom, #000000 5%, #000000 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+            background-color: #000000;
             -moz-border-radius: 6px;
             -webkit-border-radius: 6px;
             border-radius: 6px;
-            border: 1px solid #dcdcdc;
+            border: 1px solid #000000;
             display: inline-block;
             cursor: pointer;
-            color: #666666;
+            color: #ffffff;
             font-family: Arial;
             font-size: 15px;
             font-weight: bold;
             padding: 6px 24px;
             text-decoration: none;
-            text-shadow: 0px 1px 0px #ffffff;
+            text-shadow: 0px 1px 0px #000000;
         }
         
-        .piBtn:hover {
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
-            background: -moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
-            background: -webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
-            background: -o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
-            background: -ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
-            background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9', GradientType=0);
-            background-color: #e9e9e9;
+        .myButton:hover {
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #000000));
+            background: -moz-linear-gradient(top, #000000 5%, #000000 100%);
+            background: -webkit-linear-gradient(top, #000000 5%, #000000 100%);
+            background: -o-linear-gradient(top, #000000 5%, #000000 100%);
+            background: -ms-linear-gradient(top, #000000 5%, #000000 100%);
+            background: linear-gradient(to bottom, #000000 5%, #000000 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+            background-color: #000000;
         }
         
-        .piBtn:active {
+        .myButton:active {
             position: relative;
             top: 1px;
         }
-        #registBtn{
-            display: inline-block;
-            width: 500px;
-        }
-        #pInput{
-            text-align: center;
-            width: 600px;
-            margin: 0 auto;
-        }
-        
     </style>
 </head>
 
 <body>
-
-    <div id="pInput">
-        <h2>제품등록</h2>
-        <hr id=hrCss/>
+    <div id=piBody>
         <form>
-            
 
-            <input type='text' class=commonSize placeholder="문서제목" /><br/>
+            <div id='title'>제품등록</div>
+            <hr/>
+            <table>
+                <tr>
+                    <td colspan="2"><input type='text' placeholder="문서제목" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type='text' placeholder="제품명" />
+                    </td>
 
-            
-            <input type='text' class=commonSize placeholder="제품명" /><br/>
-
-            
-        <select class="commonSize">
-    <option value="">----자전거 종류----</option>
-    <option value="">1. 한발 자전거</option>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <select>
+    <option value="">---자전거 종류---</option>
+    <option value="">1. 외발 자전거</option>
     <option value="">2. 두발 자전거</option>
     <option value="">3. 세발 자전거</option>
     <option value="">4. 네발 자전거</option>
-    <option value="">5. 산악 자전거</option>
-    <option value="">6. 하이브리드 자전거</option>
+    <option value="">5. 하이브리드 자전거</option>
 </select>
-            <br/>
-            <a class='piBtn'>결재승인자1</a>
-            <a class='piBtn'>결재승인자2</a>
-            <br/>
-            <a class='piBtn'>자재리스트 등록</a>
-            <a class='piBtn'> 문서 내용 입력</a>
-            <input type="file"/>
-            <br/>
-            <a class='piBtn' id=registBtn>등록</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="myButton">결재승인자1</a>
+
+                    </td>
+                    <td>
+                        <a href="#" class="myButton">결재승인자2</a>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="myButton">자재리스트 등록</a>
+
+                    </td>
+                    <td>
+
+                        <a href="#" class="myButton">문서 내용 입력</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type='file' value='사진첨부' />
+                    </td>
+                </tr>
+            </table>
+            <p/>
+            <a href="#" class="myButton buttonBoder">등록</a>
         </form>
     </div>
 </body>
+
 </html>
