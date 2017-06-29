@@ -1,50 +1,54 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 
 <html>
 
-<head>
+	<head>
+
     <title>Page Title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
     <style>
-        #maBody #mTitle {
+    #piBody #title {
             padding-bottom: 5%;
             font-size: 30px;
             margin-left: 20%;
         }
         
-        #maBody input[type='text'],
-        #maBody select *,
-        #maBody select,
-        #maBody input[type='file'] {
+        #piBody input[type='text'],
+        #piBody select *,
+        #piBody select,
+        #piBody input[type='file'] {
             color: white;
             background-color: black;
             margin: 5px;
         }
         
-        #maBody table,
-        #maBody th,
-        #maBody td {
+        #piBody table,
+        #piBody th,
+        #piBody td {
             border: 1px solid white;
             border-spacing: 0px;
         }
         
-        #maBody a {
+        #piBody a {
             margin: 5px;
         }
         
-        #maBody .buttonBoder {
+        #piBody .buttonBoder {
             border: 1px solid white;
             margin-left: 71%;
             margin-top: 3%;
         }
         
-        #maBody {
+        #piBody {
             margin-left 50%;
             margin-right 50% width: 800px;
+            
         }
         
-        #maBody table {
+        #piBody table {
             width: 60%;
             height: 100px;
             margin: auto;
@@ -96,11 +100,14 @@
 </head>
 
 <body>
-    <div id=maBody>
+<div id=category>
+	<jsp:include page="../category/submenuLaboraory.html"></jsp:include>
+</div>
+    <div id=piBody>
+        <form>
 
-        <div id=mTitle>자재등록</div>
-        <hr/>
-        <form id="mat_frm" method="post" enctype="multipart/form-data">
+            <div id='title'>제품등록</div>
+            <hr/>
             <table>
                 <tr>
                     <td colspan="2"><input type='text' placeholder="문서제목" /></td>
@@ -109,19 +116,17 @@
                     <td colspan="2">
                         <input type='text' placeholder="제품명" />
                     </td>
+
                 </tr>
                 <tr>
                     <td colspan="2">
                         <select>
-   
-       <option value="">선택해주세요.</option>
-       <option value="">바퀴</option>
-        <option value="">핸들</option>
-        <option value="">프레임</option> 
-        <option value="">벨</option>
-        <option value="">안장</option>
-        <option value="">체인</option>
-        <option value="">나사</option>
+    <option value="">---자전거 종류---</option>
+    <option value="">1. 외발 자전거</option>
+    <option value="">2. 두발 자전거</option>
+    <option value="">3. 세발 자전거</option>
+    <option value="">4. 네발 자전거</option>
+    <option value="">5. 하이브리드 자전거</option>
 </select>
                     </td>
                 </tr>
@@ -136,24 +141,26 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>
+                        <a href="#" class="myButton">자재리스트 등록</a>
 
+                    </td>
                     <td>
 
                         <a href="#" class="myButton">문서 내용 입력</a>
                     </td>
-
+                </tr>
+                <tr>
                     <td colspan="2">
                         <input type='file' value='사진첨부' />
                     </td>
                 </tr>
             </table>
-
             <p/>
-
             <a href="#" class="myButton buttonBoder">등록</a>
         </form>
-
     </div>
 </body>
+
 
 </html>
