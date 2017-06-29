@@ -1,21 +1,22 @@
 <!doctype html>
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <html>
 <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Roboto+Condensed|Shadows+Into+Light" rel="stylesheet">
 <head>
-    <title>메인</title>
+    <title>ë©ì¸</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
     <link rel='stylesheet' href='../category/category.css' />
     <script src='../jq_lib/jquery-3.2.1.min.js'></script>
     <script src='../jq_lib/common.js'></script>
-    <script>
+<!--     <script>
         $(document).ready(
 
 			function(){
                 xhr = new XMLHttpRequest();
-	           xhr.open('get','home.html'); // url요청 정보
-	           xhr.send(); // 서버에 전송
+	           xhr.open('get','home.html'); // urlìì²­ ì ë³´
+	           xhr.send(); // ìë²ì ì ì¡
                var str='';
                xhr.onreadystatechange=function(){
                    if(xhr.readyState == 4 && xhr.status == 200){
@@ -26,8 +27,8 @@
             $('#indexNav a').click(function(){
             var url = $(this).next('input').val()
                 xhr = new XMLHttpRequest();
-	           xhr.open('get',url); // url요청 정보
-	           xhr.send(); // 서버에 전송
+	           xhr.open('get',url); // urlìì²­ ì ë³´
+	           xhr.send(); // ìë²ì ì ì¡
                var str='';
                xhr.onreadystatechange=function(){
                    if(xhr.readyState == 4 && xhr.status == 200){
@@ -37,7 +38,7 @@
                } 
             });
             });
-    </script>
+    </script> -->
 
     <style>
         #indexbody{
@@ -110,8 +111,8 @@
 
         
         
-        /* 이거 왜 먹여놓으신거지...(수정: 2017 06 26 /황주희)*/
-         /*이게 없으면 왼쪽 메뉴 속으로 컨텐츠들이 들어가 버림*/
+        /* ì´ê±° ì ë¨¹ì¬ëì¼ì ê±°ì§...(ìì : 2017 06 26 /í©ì£¼í¬)*/
+         /*ì´ê² ìì¼ë©´ ì¼ìª½ ë©ë´ ìì¼ë¡ ì»¨íì¸ ë¤ì´ ë¤ì´ê° ë²ë¦¼*/
         #mainBody{
         margin-right:0;
         margin-left: 65px;
@@ -122,11 +123,13 @@
         #category{
             margin-top: 20px;
             height: 70px;
-            /* background-color: aquamarine;  나중에 배경색 지우기*/
+            /* background-color: aquamarine;  ëì¤ì ë°°ê²½ì ì§ì°ê¸°*/
         }
 
     </style>
 </head>
+
+
 
 
 <body id=indexbody>
@@ -134,15 +137,15 @@
  
         <nav id='indexNav'>
             <a href=# ><img id='indeximg' src="../images/home.png"></a>
-            <input type=hidden value="home.html">
-            <a href=# ><img id='indeximg' src="../images/rnd.png"></a>
-            <input type='hidden' value="../laboratory/laboratoryIndex.html">
+            <!-- <input type=hidden value="home.html"> -->
+            <a href="index.html?inc=../laboratory/laboratoryIndex.html"><img id='indeximg' src="../images/rnd.png"></a>
+            <!-- <input type='hidden' value="../laboratory/laboratoryIndex.html"> -->
             <a href=#><img id='indeximg' src="../images/purchase.png"></a>
-            <input type=hidden value="../purchase/purchase_Index.html">
+            <!-- <input type=hidden value="../purchase/purchase_Index.html"> -->
             <a href=#><img id='indeximg' src="../images/product.png"></a>
-            <input type=hidden value="../product/product_index.jsp">
+            <!-- <input type=hidden value="../product/product_index.jsp"> -->
             <a href=#><img id='indeximg' src="../images/sales.png"></a>
-            <input type=hidden value="../sales/sales_index.html">
+            <!-- <input type=hidden value="../sales/sales_index.html"> -->
             <a href=#><img id='indeximg' src="../images/mypage.png"></a>
         </nav>
         <div id='mainBody'>
@@ -151,7 +154,7 @@
                 <a href="#"><img id='indeximg' src="../images/logout.png"></a>
             </header>
             
-            <!--각 팀들 카테고리 들어갈 부분(수정:2017 06 26 / 황주희)-->
+            <!--ê° íë¤ ì¹´íê³ ë¦¬ ë¤ì´ê° ë¶ë¶(ìì :2017 06 26 / í©ì£¼í¬)-->
             <div id='category'>
 			
             </div>
