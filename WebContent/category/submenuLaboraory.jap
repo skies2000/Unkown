@@ -1,4 +1,7 @@
+
 <!--Files creaded by http://www.uiplayground.in/responsive-menu-navigation/menu.php website-->
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
