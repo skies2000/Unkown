@@ -7,15 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<<<<<<< HEAD
 <div id=category>
-	<jsp:include page="../category/submenuLaboraory.jsp"></jsp:include>
-</div>
-=======
+		<jsp:include page="../category/submenuPurchase.jsp"></jsp:include>
+	</div>
 
 
-<img src="../images/Autumn1-1920x1200-wallpapershd.org.jpg"/>
- 
->>>>>>> a52cba5ecd3ab72cc8bcdf545237f27e5ac74cc0
+	<div id='purchaseResult'>
+	보고서 작성
+	</div>
 </body>
 </html>

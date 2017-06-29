@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,5 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-판매 내역 관리</body>
+	<div id=category>
+		<jsp:include page="../category/submenuSales.jsp"></jsp:include>
+	</div>
+
+	<div id='SalesResult'>판매 내역 관리</div>
+	
+</body>
 </html>
