@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<div id=category>
+	<jsp:include page="../category/submenuLaboraory.jsp"></jsp:include>
+</div>
 </body>
 </html>

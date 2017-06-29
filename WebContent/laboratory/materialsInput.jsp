@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 
 <html>
@@ -97,41 +99,43 @@
 
 <body>
     <div id=maBody>
-
-        <div id=mTitle>자재등록</div>
+<div id=category>
+	<jsp:include page="../category/submenuLaboraory.jsp"></jsp:include>
+</div>
+        <div id=mTitle>ìì¬ë±ë¡</div>
         <hr/>
         <form id="mat_frm" method="post" enctype="multipart/form-data">
             <table>
                 <tr>
-                    <td colspan="2"><input type='text' placeholder="문서제목" /></td>
+                    <td colspan="2"><input type='text' placeholder="ë¬¸ìì ëª©" /></td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input type='text' placeholder="제품명" />
+                        <input type='text' placeholder="ì íëª" />
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
                         <select>
    
-       <option value="">선택해주세요.</option>
-       <option value="">바퀴</option>
-        <option value="">핸들</option>
-        <option value="">프레임</option> 
-        <option value="">벨</option>
-        <option value="">안장</option>
-        <option value="">체인</option>
-        <option value="">나사</option>
+       <option value="">ì íí´ì£¼ì¸ì.</option>
+       <option value="">ë°í´</option>
+        <option value="">í¸ë¤</option>
+        <option value="">íë ì</option> 
+        <option value="">ë²¨</option>
+        <option value="">ìì¥</option>
+        <option value="">ì²´ì¸</option>
+        <option value="">ëì¬</option>
 </select>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <a href="#" class="myButton">결재승인자1</a>
+                        <a href="#" class="myButton">ê²°ì¬ì¹ì¸ì1</a>
 
                     </td>
                     <td>
-                        <a href="#" class="myButton">결재승인자2</a>
+                        <a href="#" class="myButton">ê²°ì¬ì¹ì¸ì2</a>
 
                     </td>
                 </tr>
@@ -139,18 +143,18 @@
 
                     <td>
 
-                        <a href="#" class="myButton">문서 내용 입력</a>
+                        <a href="#" class="myButton">ë¬¸ì ë´ì© ìë ¥</a>
                     </td>
 
                     <td colspan="2">
-                        <input type='file' value='사진첨부' />
+                        <input type='file' value='ì¬ì§ì²¨ë¶' />
                     </td>
                 </tr>
             </table>
 
             <p/>
 
-            <a href="#" class="myButton buttonBoder">등록</a>
+            <a href="#" class="myButton buttonBoder">ë±ë¡</a>
         </form>
 
     </div>

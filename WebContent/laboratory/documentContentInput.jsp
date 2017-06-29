@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 
 <html>
@@ -61,11 +63,11 @@
 
 	<body>
 <div id=dciBody>
-    <h2 id = title>문서 내용 입력 </h2>
+    <h2 id = title>ë¬¸ì ë´ì© ìë ¥ </h2>
     <textarea cols="50" rows="10" id=dciContent
-     placeholder="문서를 입력해 주세요."></textarea>
+     placeholder="ë¬¸ìë¥¼ ìë ¥í´ ì£¼ì¸ì."></textarea>
      
-     <a href=# myButton>입력</a>
+     <a href=# myButton>ìë ¥</a>
     
 </div>
 	</body>
