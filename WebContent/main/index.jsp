@@ -1,22 +1,22 @@
-<!doctype html>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<!doctype html>
+
 <html>
 <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Roboto+Condensed|Shadows+Into+Light" rel="stylesheet">
 <head>
-    <title>ë©ì¸</title>
+    <title>메인</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
     <link rel='stylesheet' href='../category/category.css' />
     <script src='../jq_lib/jquery-3.2.1.min.js'></script>
     <script src='../jq_lib/common.js'></script>
-<!--     <script>
+   <!--  <script>
         $(document).ready(
-
 			function(){
                 xhr = new XMLHttpRequest();
-	           xhr.open('get','home.html'); // urlìì²­ ì ë³´
-	           xhr.send(); // ìë²ì ì ì¡
+	           xhr.open('get','home.html'); // url요청 정보
+	           xhr.send(); // 서버에 전송
                var str='';
                xhr.onreadystatechange=function(){
                    if(xhr.readyState == 4 && xhr.status == 200){
@@ -27,8 +27,8 @@
             $('#indexNav a').click(function(){
             var url = $(this).next('input').val()
                 xhr = new XMLHttpRequest();
-	           xhr.open('get',url); // urlìì²­ ì ë³´
-	           xhr.send(); // ìë²ì ì ì¡
+	           xhr.open('get',url); // url요청 정보
+	           xhr.send(); // 서버에 전송
                var str='';
                xhr.onreadystatechange=function(){
                    if(xhr.readyState == 4 && xhr.status == 200){
@@ -51,7 +51,6 @@
             
         }
         
-
         
         #allBody {
         }
@@ -62,7 +61,6 @@
             padding-top:10px;
             margin-right: 20px;           
         }
-
         #indexSection {
         }
         
@@ -90,7 +88,6 @@
             background-color: #222;    
         }
         */
-
         #indeximage{
         transition: .5s ease;
         backface-visibility: hidden;
@@ -108,28 +105,34 @@
             min-width: 350px;
         }
         
-
         
         
-        /* ì´ê±° ì ë¨¹ì¬ëì¼ì ê±°ì§...(ìì : 2017 06 26 /í©ì£¼í¬)*/
-         /*ì´ê² ìì¼ë©´ ì¼ìª½ ë©ë´ ìì¼ë¡ ì»¨íì¸ ë¤ì´ ë¤ì´ê° ë²ë¦¼*/
+        /* 이거 왜 먹여놓으신거지...(수정: 2017 06 26 /황주희)*/
+         /*이게 없으면 왼쪽 메뉴 속으로 컨텐츠들이 들어가 버림*/
         #mainBody{
         margin-right:0;
         margin-left: 65px;
         }
         
         
-
         #category{
             margin-top: 20px;
             height: 70px;
-            /* background-color: aquamarine;  ëì¤ì ë°°ê²½ì ì§ì°ê¸°*/
+            /* background-color: aquamarine;  나중에 배경색 지우기*/
         }
-
     </style>
+    
+    
+    <%
+    
+    	request.setCharacterEncoding("utf-8");
+    	response.setContentType("text/html;charset=utf-8");
+    	String inc = "home.html";
+    	if(request.getParameter("inc")!=null){
+    		inc = request.getParameter("inc");
+    }
+    %> 
 </head>
-
-
 
 
 <body id=indexbody>
@@ -138,7 +141,7 @@
         <nav id='indexNav'>
             <a href=# ><img id='indeximg' src="../images/home.png"></a>
             <!-- <input type=hidden value="home.html"> -->
-            <a href="index.html?inc=../laboratory/laboratoryIndex.html"><img id='indeximg' src="../images/rnd.png"></a>
+            <a href="index.jsp?inc=../laboratory/laboratoryIndex.jsp" ><img id='indeximg' src="../images/rnd.png"></a>
             <!-- <input type='hidden' value="../laboratory/laboratoryIndex.html"> -->
             <a href=#><img id='indeximg' src="../images/purchase.png"></a>
             <!-- <input type=hidden value="../purchase/purchase_Index.html"> -->
@@ -154,13 +157,14 @@
                 <a href="#"><img id='indeximg' src="../images/logout.png"></a>
             </header>
             
-            <!--ê° íë¤ ì¹´íê³ ë¦¬ ë¤ì´ê° ë¶ë¶(ìì :2017 06 26 / í©ì£¼í¬)-->
-            <div id='category'>
-			
-            </div>
+            <!--각 팀들 카테고리 들어갈 부분(수정:2017 06 26 / 황주희)-->
+            <!-- <div id='category'></div> -->
 
             <section id='indexSection'>
                 <div id='indexContent'>
+
+<%-- <%out.print(inc); %> --%>
+			<jsp:include page="<%=inc%>"/>
 
                    <!-- <input type="hidden" id='pathCheck' value="testFile.html"> --> 
 

@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 
 <html>
@@ -98,6 +100,9 @@
 </head>
 
 <body>
+<div id=category>
+	<jsp:include page="../category/submenuLaboraory.html"></jsp:include>
+</div>
     <div id=piBody>
         <form>
 

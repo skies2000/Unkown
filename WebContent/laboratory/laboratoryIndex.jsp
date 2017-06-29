@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 
 <html>
@@ -6,13 +8,13 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
 		 <script src='../jq_lib/jquery-3.2.1.min.js'></script>
-    <script>
+    <!-- <script>
         $(document).ready(
 			function(){
                 
                 xhr = new XMLHttpRequest();
-	           xhr.open('get','../category/submenuLaboraory.html'); // url요청 정보
-	           xhr.send(); // 서버에 전송
+	           xhr.open('get','../category/submenuLaboraory.html'); // urlìì²­ ì ë³´
+	           xhr.send(); // ìë²ì ì ì¡
                var str='';
                xhr.onreadystatechange=function(){
                    if(xhr.readyState == 4 && xhr.status == 200){
@@ -21,18 +23,21 @@
                    }
                }
             });
-        </script>
+        </script> -->
         <style>
 
     #laboratorResult *{
     color : white;
     }
 
-</style> 
+</style>  
+<div id=category>
+	<jsp:include page="../category/submenuLaboraory.html"></jsp:include>
+</div>
 	</head>
     
 	<body>
-        <div id=laboratorResult></div>
+        <!-- <div id=laboratorResult></div> -->
 
     
 	</body>
