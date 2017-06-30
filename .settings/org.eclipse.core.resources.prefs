@@ -1,3 +1,8 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=287b85bb2eaa019de2113ac8cb0a0071a38e1aec
 eclipse.preferences.version=1
-encoding//WebContent/laboratory/materialsList.html=UTF-8
+encoding//WebContent/category/submenuProduct.html=UTF-8
+encoding//WebContent/laboratory/materialsDetails.jsp=UTF-8
 encoding//WebContent/laboratory/productInput.jsp=UTF-8
+encoding/<project>=UTF-8

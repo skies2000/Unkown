@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 
 <html>
@@ -97,8 +99,10 @@
 
 <body>
     <div id=maBody>
-
-        <div id=mTitle>자재등록</div>
+<div id=category>
+	<jsp:include page="../category/submenuLaboraory.jsp"></jsp:include>
+</div>
+        <div id=mTitle>자재등록</div>
         <hr/>
         <form id="mat_frm" method="post" enctype="multipart/form-data">
             <table>
@@ -107,21 +111,19 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input type='text' placeholder="제품명" />
+                        <input type='text' placeholder="자재명" />
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
                         <select>
    
-       <option value="">선택해주세요.</option>
+       <option value="">핸들</option>
        <option value="">바퀴</option>
-        <option value="">핸들</option>
-        <option value="">프레임</option> 
         <option value="">벨</option>
-        <option value="">안장</option>
+        <option value="">프레임</option> 
         <option value="">체인</option>
-        <option value="">나사</option>
+        <option value="">라이트</option>
 </select>
                     </td>
                 </tr>
@@ -143,14 +145,14 @@
                     </td>
 
                     <td colspan="2">
-                        <input type='file' value='사진첨부' />
+                        <input type='file' value='사진첨부' />
                     </td>
                 </tr>
             </table>
 
             <p/>
 
-            <a href="#" class="myButton buttonBoder">등록</a>
+            <a href="#" class="myButton buttonBoder">등록</a>
         </form>
 
     </div>

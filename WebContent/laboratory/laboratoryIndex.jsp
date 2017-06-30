@@ -31,14 +31,13 @@
     }
 
 </style>  
-<div id=category>
-	<jsp:include page="../category/submenuLaboraory.html"></jsp:include>
-</div>
 	</head>
     
-	<body>
+<body>
+	<div id=category>
+		<jsp:include page="../category/submenuLaboraory.jsp"></jsp:include>
+	</div>
         <!-- <div id=laboratorResult></div> -->
-
     
 	</body>
 </html>
