@@ -139,7 +139,7 @@
     <div id=allBody>
  
         <nav id='indexNav'>
-            <a href=# ><img id='indeximg' src="../images/home.png"></a>
+            <a href="index.jsp?inc=home.html" ><img id='indeximg' src="../images/home.png"></a>
             <!-- <input type=hidden value="home.html"> -->
             
             <a href="index.jsp?inc=../laboratory/laboratoryIndex.jsp" ><img id='indeximg' src="../images/rnd.png"></a>

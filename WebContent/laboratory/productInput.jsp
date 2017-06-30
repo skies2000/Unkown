@@ -5,6 +5,15 @@
 <html>
 
 	<head>
+	<script>
+	function docConInputBtn(){
+		window.open("../laboratory/documentContentInput.jsp","","height=300px, width=500px");
+	}
+	
+	function mlist_input(){
+		window.open("../laboratory/p_materialList_Input.jsp","","height=300px, width=500px");
+	}
+	</script>
 
     <title>Page Title</title>
     <meta charset="UTF-8">
@@ -142,19 +151,19 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="#" class="myButton">자재리스트 등록</a>
+                        <a href="#" class="myButton" onclick="mlist_input()">자재리스트 등록</a>
 
                     </td>
                     <td>
 
-                        <a href="#" class="myButton">문서 내용 입력</a>
+                        <a href="#" class="myButton" onClick="docConInputBtn()">문서 내용 입력</a>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input type='file' value='사진첨부' />
+                        <label>사진첨부 : </label><input type='file' value='사진첨부' />
                     </td>
-                </tr>
+                </tr> 
             </table>
             <p/>
             <a href="#" class="myButton buttonBoder">등록</a>

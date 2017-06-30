@@ -47,8 +47,8 @@
 	<div id='uipgMenuWrap'>
 		<div class='uipgMenu'>
 		  <ul>
-    <li><a href="#">Home</a>
-    <input type =hidden value="../laboratory/laboratoryHome.jsp"/>
+    <li><a href="index.jsp?inc=../laboratory/laboratoryHome.jsp">Home</a>
+    <!-- <input type =hidden value="../laboratory/laboratoryHome.jsp"/> -->
     </li>
     
     <li><a href="##">제품</a>

@@ -55,6 +55,9 @@
             position: relative;
             top: 1px;
         }
+        #dciBody textarea{
+        	font-size: 20px;
+        }
             
             
             
@@ -63,11 +66,11 @@
 
 	<body>
 <div id=dciBody>
-    <h2 id = title>ë¬¸ì ë´ì© ìë ¥ </h2>
+    <h2 id = title>문서 내용 입력 </h2>
     <textarea cols="50" rows="10" id=dciContent
-     placeholder="ë¬¸ìë¥¼ ìë ¥í´ ì£¼ì¸ì."></textarea>
-     
-     <a href=# myButton>ìë ¥</a>
+     placeholder="문서를 입력해 주세요."></textarea>
+     <br/>
+     <a href=# class='myButton' >입력</a>
     
 </div>
 	</body>

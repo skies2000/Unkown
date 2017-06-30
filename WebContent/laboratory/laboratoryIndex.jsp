@@ -14,7 +14,7 @@
                 
                 xhr = new XMLHttpRequest();
 	           xhr.open('get','../category/submenuLaboraory.html'); // urlìì²­ ì ë³´
-	           xhr.send(); // ìë²ì ì ì¡
+	           xhr.send(); 
                var str='';
                xhr.onreadystatechange=function(){
                    if(xhr.readyState == 4 && xhr.status == 200){
