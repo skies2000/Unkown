@@ -9,10 +9,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
     <style>
+    	#proDetails *{
+    		transition: all 0.5s;
+    	}
         .pdList img {
             display: inline-block;
             width: 50px;
             height: 50px;
+        }
+        #proDetails .pdList:HOVER{
+        	background-color: #aaa;
         }
         
         #proTitle {
@@ -28,11 +34,13 @@
             display: inline-block;
             width: 70px;
             height: 70px;
+            cursor : pointer;
+            border: 2px solid blue;
         }
         
         #proDetails .pdList span,
         #proDetails .pdList img {
-            display: inline-block;
+            display: inline-block; 
             border: 2px solid rgb(85, 85, 84);
             margin-top: 20px;
             margin-right: 7px;
@@ -130,21 +138,21 @@
         </div>
 
         <div class='pdList'>
-            <img src="../images/khk_RAMBLE2image.jpg" width="300px" height="200px" class=proImg>
+            <img src="../images/khk_RAMBLE2image.jpg"  class=proImg>
             <span class=proModel>모델명1</span>
             <span>등록일</span>
             <span>결재승인상태</span>
             <span>최종등록자</span>
         </div>
         <div class='pdList'>
-            <img src="../images/khk_RAMBLE2image.jpg" width="300px" height="200px" class=proImg>
+            <img src="../images/khk_RAMBLE2image.jpg"  class=proImg>
             <span class=proModel>모델명1</span>
             <span>등록일</span>
             <span>결재승인상태</span>
             <span>최종등록자</span>
         </div>
         <div class='pdList'>
-            <img src="../images/khk_RAMBLE2image.jpg" width="300px" height="200px" class=proImg>
+            <img src="../images/khk_RAMBLE2image.jpg"  class=proImg>
             <span class=proModel>모델명1</span>
             <span>등록일</span>
             <span>결재승인상태</span>

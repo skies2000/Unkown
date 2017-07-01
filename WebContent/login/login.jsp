@@ -17,7 +17,7 @@
             font-family: 'FontAwesome', sans-serif;
         }
         
-        body {
+        #loginBody {
             background: #2c3338;
             color: #606468;
             font: 87.5%/1.5em 'Open Sans', sans-serif;
@@ -25,7 +25,7 @@
             
         }
         
-        input {
+        #login input {
             border: none;
             font-family: 'Open Sans', Arial, sans-serif;
             font-size: 16px;
@@ -34,7 +34,7 @@
             -webkit-appearance: none;
         }
         
-        p {
+        #loginBody p {
             line-height: 1.5em;
         }
         
@@ -107,7 +107,7 @@
     </style>
 </head>
 
-<body>
+<body id="loginBody">
     <div id="login"> <!--css로 Login창 이동시킬때 #Login만 위치 지정 하면 됨.  -->
         <form name='form-login'  method="post" action="login.hwan">
             <span class="fontawesome-user"></span>
