@@ -13,16 +13,15 @@
 	<mvc:default-servlet-handler/>
 	
 	
-	<bean id='factory' class='myba.UnknownFactory'/>
 
 
 	<bean id='dao' class='hwan.HwanDao'>
-		<constructor-arg ref='factory'/>
 	</bean> 
-
+	
 	<bean id='ctrl' class='hwan.HwanController'>
 		<constructor-arg ref='dao'/>
 	</bean>
+
 
 </beans>
 

@@ -2,5 +2,16 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="hwandb">
+	<resultMap type="hwan.HwanVo" id="loginMap">
+		<result property="ecode" column="ecode"/>
+		<result property="epwd" column="epwd"/> 	
+	
+	</resultMap>
+	
+	<select id = "loginList" resultMap="loginMap">
+		select * from employees
+	</select>
+		
+
 
 </mapper>

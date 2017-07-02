@@ -35,7 +35,6 @@
 				/WEB-INF/hwan_controller.xml
 			</param-value>
 		</init-param>
-		<load-on-startup>1</load-on-startup>
 	</servlet>
 
 	<servlet-mapping>

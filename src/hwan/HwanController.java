@@ -1,9 +1,13 @@
 package hwan;
 
-import javax.security.auth.message.callback.PrivateKeyCallback.Request;
+import java.io.PrintWriter;
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -21,16 +25,26 @@ public class HwanController {
 		this.dao = dao;
 	}
 	@RequestMapping(value="login/login.hwan", method={RequestMethod.GET, RequestMethod.POST })
-	public Object login(HwanVo vo){
-		ModelAndView mv = new ModelAndView();
-		
-		mv.setViewName("main/index.jsp");
-		
-		System.out.println("유저 아이디 : "+vo.getUserid());
-		System.out.println("유저 비밀번호 : "+vo.getUserpwd());
-		
-		return mv;
-		
+	public void login(HttpServletRequest req, HttpServletResponse resp){
+		resp.setCharacterEncoding("utf-8");
+		PrintWriter out = null;
+		List<HwanVo> list = dao.loginList();
+		StringBuffer sb = new StringBuffer();
+		sb.append("[");
+		try{
+			out = resp.getWriter();
+			
+			for(int i=0; i<list.size();i++){
+				sb.append("{'ecode':'"+list.get(i).ecode+"','epwd':'"+list.get(i).epwd+"'},");
+			}
+			sb.append("]");
+			String str = sb.toString();
+			str = str.replaceAll("'", "\"");
+			str = str.replaceAll(",]", "]");
+			out.print(str);
+		}catch(Exception e){ 
+			e.printStackTrace();
+		}
 	}
 	@SuppressWarnings("finally")
 	@RequestMapping(value="ajaxTest.hwan", method={RequestMethod.POST,RequestMethod.GET})
@@ -38,7 +52,7 @@ public class HwanController {
 		ModelAndView mv = new ModelAndView();
 		MultipartRequest mul= null;
 		try{
-			mul = new MultipartRequest(req,"C:\\workspace\\UnkownBike\\WebContent\\images", 1024*10000,"utf-8",new DefaultFileRenamePolicy());
+			mul = getMul(req);
 		mv.setViewName("testResult.jsp");
 		System.out.println("ajaxTest.hwan 실행");
 		System.out.println(mul.getParameter("text1"));
@@ -54,5 +68,20 @@ public class HwanController {
 			return mv;
 		}
 			
+	}
+	
+	@SuppressWarnings("finally")
+	public MultipartRequest getMul(HttpServletRequest req){
+		MultipartRequest mul= null;
+		
+		try{
+			mul = new MultipartRequest(req,"C:\\workspace\\UnkownBike\\WebContent\\images", 1024*10000,"utf-8",new DefaultFileRenamePolicy());
+		}catch(Exception e){
+			e.printStackTrace();
+			
+		}finally {
+			return mul;
+		}
+		
 	}
 }
