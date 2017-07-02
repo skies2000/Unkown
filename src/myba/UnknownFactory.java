@@ -18,10 +18,11 @@ public class UnknownFactory {
 			System.out.println("db connection fail...");
 			ex.printStackTrace();
 		}
-	}
+	} 
 
 	public static SqlSessionFactory getFactory() {
 		return factory;
 	}
 	
 }
+  
