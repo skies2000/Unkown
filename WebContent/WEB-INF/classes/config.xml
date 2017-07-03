@@ -11,7 +11,7 @@
             <property name='driver' value='oracle.jdbc.driver.OracleDriver'/>
             <property name='url' value='jdbc:oracle:thin:@192.168.0.24:1521:xe'/>            
 
-
+ 
             <property name='username' value='uk'/>
             <property name='password' value='uk'/>
          </dataSource>
@@ -19,10 +19,9 @@
    </environments>
 
    <mappers>
-      <mapper resource="unknown.xml"/> <!--공통 or 임시  -->
-      
       <mapper resource="hwanDB.xml"/><!--마이 바티스 쓰실분 이런식으로 추가하세요~  -->
-      <mapper resource="hoon.xml"/>
+      <mapper resource="unknownjun.xml"/> <!--공통 or 임시  -->
+      <mapper resource="hoonDB.xml"/>
       <mapper resource="jooDB.xml"/>
       <mapper resource="junDB.xml"/>
       <mapper resource="sungDB.xml"/>
