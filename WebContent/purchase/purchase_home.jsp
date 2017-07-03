@@ -98,12 +98,6 @@
     	<a href="#"><span class='phcate'>페달</span></a>
     </div>
     
-    <%
-    List listimg = new ArrayList();
-    
-    listimg.add()
-    
-    %>
     
     
     
