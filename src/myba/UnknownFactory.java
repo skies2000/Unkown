@@ -7,7 +7,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 public class UnknownFactory {
-	//connection?— ?•„?š”?•œ ? •ë³´ë?? ê°–ê³  ?ˆ?Š” ?ŒŒ?¼
+
 	private static SqlSessionFactory factory;
 	
 	static{
