@@ -7,6 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-제품 재고>제품 상세 페이지
+	<div id=category>
+		<jsp:include page="../category/submenuProduct.jsp"></jsp:include>
+	</div>
+	
+	<div id='productResult'>
+		제품 재고>제품 상세 페이지
+	</div>
+
+
 </body>
 </html>

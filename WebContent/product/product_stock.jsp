@@ -7,7 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-재고 조회 <br/>
+	<div id=category>
+		<jsp:include page="../category/submenuProduct.jsp"></jsp:include>
+	</div>
+	
+	<div id='productResult'>
+		재고 조회
+	</div>
 
 </body>
 </html>

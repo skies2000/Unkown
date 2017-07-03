@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 
 <html>
@@ -18,46 +20,49 @@
 </head>
 
 <body>
+<div id=category>
+	<jsp:include page="../category/submenuLaboraory.jsp"></jsp:include>
+</div>
     <form>
-        <label>제품상세</label>
+        <label>자재상세</label>
 
         <select>
-        <option value="">제품검색어</option>
-        <option value="">1</option>
-        <option value="">2</option>
-        <option value="">3</option>
-        <option value="">4</option>
-        <option value="">5</option>
+        <option value="">옵션1</option>
+        <option value="">옵션2</option>
+        <option value="">옵션3</option>
+        <option value="">옵션4</option>
+        <option value="">옵션5</option>
+        <option value="">옵션6</option>
         
     </select>
-        <input type='button' value='검색' />
+        <input type='button' value='등록' />
         <hr/> 
         <div>
             <div class='mdList'>
                 <img src="../images/khk_RAMBLE2image.jpg" width="300px" height="200px">
-                <span>모델명1</span>
+                <span>자재명1</span>
                 <span>등록일</span>
-                <span>결재승인상태</span>
+                <span>결재승인상태</span>
                 <span>최종등록자</span>
             </div>
             <div class='mdList'> <img src="../images/khk_RAMBLE2image.jpg" width="300px" height="200px">
-                <span>모델명2</span>
+                <span>자재명2</span>
                 <span>등록일</span>
-                <span>결재승인상태</span>
+                <span>결재승인상태</span>
                 <span>최종등록자</span>
             </div>
             <div class='mdList'> <img src="../images/khk_RAMBLE2image.jpg" width="300px" height="200px">
-                <span>모델명3</span>
+                <span>자재명3</span>
                 <span>등록일</span>
-                <span>결재승인상태</span>
-                <span>최종등록자</span>
+                <span>결재승인상태</span>
+                <span>최종등록자</span>
             </div>
 
             <div class='mdList'> <img src="../images/khk_RAMBLE2image.jpg" width="300px" height="200px">
-                <span>모델명1</span>
+                <span>자재명4</span>
                 <span>등록일</span>
-                <span>결재승인상태</span>
-                <span>최종등록자</span>
+                <span>결재승인상태</span>
+                <span>최종등록자</span>
             </div>
         </div>
     </form>

@@ -8,6 +8,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-생산 효율
+	<div id=category>
+		<jsp:include page="../category/submenuProduct.jsp"></jsp:include>
+	</div>
+
+	<div id='productResult'>
+		생산 효율
+	</div>
 </body>
 </html>

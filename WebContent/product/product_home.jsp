@@ -7,6 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<img src='../images/yyh_empImage30001.jpg'>
+	
+	<div id=category>
+		<jsp:include page="../category/submenuProduct.jsp"></jsp:include>
+	</div>
+	
+	<div id='productResult'>
+		<img src='../images/yyh_empImage30001.jpg'>
+	</div>
 </body>
 </html>
