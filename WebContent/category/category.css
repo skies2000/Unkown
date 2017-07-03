@@ -25,7 +25,6 @@ body {
 }
 .uipgD .uipgMenu, .uipgD .uipgMenu ul {
   float: left;
-  width: 70%;
   display: block;
 }
 .uipgD .uipgMenu {
@@ -151,8 +150,6 @@ body {
 }
 .uipgMenu ul li.active a {
   color: #7e8389;
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 63e2c9e35d0ae7709e826353a758df1daa563c85
+
