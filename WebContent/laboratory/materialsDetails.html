@@ -7,7 +7,7 @@
     <meta name="viewport" content="initial-scale=1.0">
 
 
- <style>
+    <style>
         #maTitle {
             font-size: 30px;
         }
@@ -34,15 +34,12 @@
         }
         
         #maSelect {
-            
             margin-top: 30px;
             color: white;
             background-color: black;
         }
         
-    
-        
-         .myButton {
+        .myButton {
             -moz-box-shadow: inset 0px 1px 0px 0px #000000;
             -webkit-box-shadow: inset 0px 1px 0px 0px #000000;
             box-shadow: inset 0px 1px 0px 0px #000000;
@@ -85,19 +82,61 @@
             top: 1px;
         }
         
-       
+        .mdList img {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+        }
+        
+        .mdList img:HOVER {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            cursor: pointer;
+            border: 2px solid blue;
+        }
+        
+        #maDetails * {
+            transition: all 0.5s;
+        }
+        
+        #maDetails .mdList:HOVER {
+            background-color: #aaa;
+        }
+        
+        #maDetails {
+            width: 60%;
+            margin: 0 auto;
+        }
     </style>
+
+    <script>
+        $(document).ready(function() {
+            $("#maDetails .mdList img").click(function() {
+                var xhr = new XMLHttpRequest();
+                var str = "";
+                xhr.open("get", "../laboratory/materialsView.html");
+                xhr.send();
+                xhr.onreadystatechange = function(){
+                    if(xhr.readyState == 4 && xhr.status == 200){
+                        str = xhr.responseText;
+                        $("#laboratorResult").html(str);
+                    }
+                }
+
+            });
+
+
+        });
+    </script>
 </head>
 
 <body>
-<div id=category>
-	<jsp:include page="../category/submenuLaboraory.jsp"></jsp:include>
-</div>
     <div id=maDetails>
         <form>
             <div id=maTitle>제품상세</div>
 
-         
+
             <select id=maSelect>
      
         <option value="">선택해주세요</option>
@@ -106,8 +145,8 @@
     
         
     </select>
-               <input type='text' placeholder="검색어를 입력해주세요."/>
-           <a href="#" class="myButton buttonBoder">검색</a>
+            <input type='text' placeholder="검색어를 입력해주세요." />
+            <a href="#" class="myButton buttonBoder">검색</a>
             <hr/>
             <div>
                 <div class='mdList'>

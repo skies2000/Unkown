@@ -19,7 +19,7 @@ $(document).ready(function(){
         xhr.open("post",url);
         xhr.send(fd);
         
-        xhr.onreadystatechange = function(){
+        r.onreadystatechange = function(){
             if(xhr.readyState==4 && xhr.status==200){
                 var str = xhr.responseText;
                 $('#result').html(str);
