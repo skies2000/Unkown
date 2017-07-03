@@ -1,0 +1,164 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <style>
+    	#proDetails *{
+    		transition: all 0.5s;
+    	}
+        .pdList img {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+        }
+        #proDetails .pdList:HOVER{
+        	background-color: #aaa;
+        }
+        
+        #proTitle {
+            font-size: 30px;
+        }
+        
+        .pdList img {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+        }
+          .pdList img:HOVER {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            cursor : pointer;
+            border: 2px solid blue;
+        }
+        
+        #proDetails .pdList span,
+        #proDetails .pdList img {
+            display: inline-block; 
+            border: 2px solid rgb(85, 85, 84);
+            margin-top: 20px;
+            margin-right: 7px;
+        }
+        
+        #proDetails .pdList span {
+            display: inline-block;
+            margin-bottom: 10px;
+            position: relative;
+            bottom: 19px;
+        }
+        
+        #proSelect {
+            margin-top: 30px;
+            color: white;
+            background-color: black;
+        }
+        
+        .myButton {
+            -moz-box-shadow: inset 0px 1px 0px 0px #000000;
+            -webkit-box-shadow: inset 0px 1px 0px 0px #000000;
+            box-shadow: inset 0px 1px 0px 0px #000000;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #000000));
+            background: -moz-linear-gradient(top, #000000 5%, #000000 100%);
+            background: -webkit-linear-gradient(top, #000000 5%, #000000 100%);
+            background: -o-linear-gradient(top, #000000 5%, #000000 100%);
+            background: -ms-linear-gradient(top, #000000 5%, #000000 100%);
+            background: linear-gradient(to bottom, #000000 5%, #000000 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+            background-color: #000000;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            border: 1px solid #000000;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 6px 24px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #000000;
+        }
+        
+        .myButton:hover {
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #000000));
+            background: -moz-linear-gradient(top, #000000 5%, #000000 100%);
+            background: -webkit-linear-gradient(top, #000000 5%, #000000 100%);
+            background: -o-linear-gradient(top, #000000 5%, #000000 100%);
+            background: -ms-linear-gradient(top, #000000 5%, #000000 100%);
+            background: linear-gradient(to bottom, #000000 5%, #000000 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+            background-color: #000000;
+        }
+        
+        .myButton:active {
+            position: relative;
+            top: 1px;
+        }
+        
+
+    </style>
+    
+    	<script>
+		function pdviewBtn() {
+			location.href = "index.jsp?inc=../laboratory/productView.jsp";
+		}
+		</script>
+</head>
+<div id=category>
+	<jsp:include page="../category/submenuLaboraory.jsp"></jsp:include>
+</div>
+<body>
+ <div id=proDetails>
+        <div id=proTitle>제품상세</div>
+
+        <select id=proSelect>
+        <option value="">선택해주세요</option>
+        <option value="">전체</option>
+        <option value="">제품명</option>
+    
+        
+    </select>
+        <input type='text' placeholder="검색어를 입력해주세요." />
+        <a href="#" class="myButton buttonBoder">검색</a>
+        <hr/>
+
+        <div class='pdList'>
+            <img src="../images/khk_RAMBLE2image.jpg" class=proImg onclick="pdviewBtn()">
+            <span class=proModel>모델명1</span>
+            <span>등록일</span>
+            <span>결재승인상태</span>
+            <span>최종등록자</span>
+        </div>
+
+        <div class='pdList'>
+            <img src="../images/khk_RAMBLE2image.jpg"  class=proImg>
+            <span class=proModel>모델명1</span>
+            <span>등록일</span>
+            <span>결재승인상태</span>
+            <span>최종등록자</span>
+        </div>
+        <div class='pdList'>
+            <img src="../images/khk_RAMBLE2image.jpg"  class=proImg>
+            <span class=proModel>모델명1</span>
+            <span>등록일</span>
+            <span>결재승인상태</span>
+            <span>최종등록자</span>
+        </div>
+        <div class='pdList'>
+            <img src="../images/khk_RAMBLE2image.jpg"  class=proImg>
+            <span class=proModel>모델명1</span>
+            <span>등록일</span>
+            <span>결재승인상태</span>
+            <span>최종등록자</span>
+        </div>
+    </div>
+</body>
+
+</html>

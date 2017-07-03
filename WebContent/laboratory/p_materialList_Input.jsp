@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 
 <html>
@@ -8,7 +10,7 @@
 	</head>
 
 	<body>
-	<a href="../main/index.html">로그인</a>
+	자재리스트 등록
 
 	</body>
 </html>

@@ -11,6 +11,9 @@
 </script>
 </head>
 <body>
+	<div id=category>
+		<jsp:include page="../category/submenuProduct.jsp"></jsp:include>
+	</div>
 <div id=top_line> <!-- 맨 위 검색범위 선택하는 부분 -->
 	<span class='top_main'>자재 검색</span>
 	<span class='top_menu'>자재 코드</span>

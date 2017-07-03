@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<<<<<<< HEAD
 <title>생산 요청서 조회</title>
 <link rel='stylesheet' href='../category/product_request_list.css' />
 <script>
@@ -24,6 +25,9 @@
     </script>
 </head>
 <body>
+	<div id=category>
+		<jsp:include page="../category/submenuProduct.jsp"></jsp:include>
+	</div>
 <div id=top_line> <!-- 맨 위 -->
 	<span class='top_main'>생산 요청서 조회</span>
 	<input type='text' id='findStr'>
@@ -46,6 +50,12 @@
 	<span> </span>
 	<span> </span>
 </div>
-<a href='#' id='product_request_view_go'>상세 보기</a>
+	
+	<div id='productResult'>
+		생상 요청서 조회<br/>
+		<a href='#' id='index.jsp?inc=../product/product_request_view.jsp'>상세 보기</a>
+	</div>	
+
+
 </body>
 </html>

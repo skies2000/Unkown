@@ -8,7 +8,7 @@
      
     <script src='../jq_lib/common.js'></script>
 
-	 <script>
+<!-- 	 <script>
         $(document).ready(
 			function(){
                 xhr = new XMLHttpRequest();
@@ -36,45 +36,44 @@
                }
             });
             });
-    </script>
+    </script> -->
 
 </head>
 <body>
 	<div id='uipgMenuWrap'> 
 		<div class='uipgMenu'>
 			<ul>
-    <li><a href="#">HOME</a>
-    <input type=hidden value="../product/product_home.jsp"/>
+    <li><a href="index.jsp?inc=../product/product_home.jsp">HOME</a>
+    <!-- <input type=hidden value="../product/product_home.jsp"/> -->
     </li>
-    <li><a href="#">생산관리</a>
-    <input type=hidden value="../product/product_management.jsp"/>
+    <li><a href="index.jsp?inc=../product/product_management.jsp">생산관리</a>
+    <!-- <input type=hidden value="../product/product_management.jsp"/> -->
       <ul>
-      <li><a href="#">생산오더 관리</a>
-        <input type=hidden value="../product/product_order.jsp"/></li>
-        <li><a href="#">생산요청서 조회</a>
-        <input type=hidden value="../product/product_request_list.jsp"/></li>
+      <li><a href="index.jsp?inc=../product/product_order.jsp">생산오더 관리</a>
+        <!-- <input type=hidden value="../product/product_order.jsp"/></li> -->
+        <li><a href="index.jsp?inc=../product/product_request_list.jsp">생산요청서 조회</a>
+        <!-- <input type=hidden value="../product/product_request_list.jsp"/></li> -->
         
-        <li><a href="#">생산효율 관리</a>
-        <input type=hidden value="../product/product_eff.jsp"/>
+        <li><a href="index.jsp?inc=../product/product_eff.jsp">생산효율 관리</a>
+        <!-- <input type=hidden value="../product/product_eff.jsp"/> -->
             <ul>
-                <li><a href="#">라인별 생산현황</a>
-                <input type=hidden value="../product/product_eff_result.jsp"/></li>
-                <li><a href="#">기간별 생산현황</a>
-                <input type=hidden value="../product/product_eff_result.jsp"/></li>
-                <li><a href="#">제품별 생산현황</a>
-                <input type=hidden value="../product/product_eff_result.jsp"/></li>
+                <li><a href="index.jsp?inc=../product/product_eff_result.jsp">라인별 생산현황</a>
+                <!-- <input type=hidden value="../product/product_eff_result.jsp"/></li> -->
+                <li><a href="index.jsp?inc=../product/product_eff_result.jsp">기간별 생산현황</a>
+                <!-- <input type=hidden value="../product/product_eff_result.jsp"/></li> -->
+                <li><a href="index.jsp?inc=../product/product_eff_result.jsp">제품별 생산현황</a>
+                <!-- <input type=hidden value="../product/product_eff_result.jsp"/></li> -->
             </ul>       
         </li>
       </ul> 
     </li>
-    <li><a href="#">재고조회</a>
-    <input type=hidden value="../product/product_stock.jsp"/>
+    <li><a href="index.jsp?inc=../product/product_stock.jsp">재고조회</a>
+    <!-- <input type=hidden value="../product/product_stock.jsp"/> -->
       <ul>
-        <li><a href="#">제품 재고 조회</a>
-        <input type=hidden value="../product/product_stock_product.jsp"/>
-        <li><a href="#">자재 재고 조회</a>
-        <input type=hidden value="../product/product_stock_material.jsp"/></li>
-        
+        <li><a href="index.jsp?inc=../product/product_stock_product.jsp">제품 재고 조회</a>
+        <!-- <input type=hidden value="../product/product_stock_product.jsp"/> -->
+        <li><a href="index.jsp?inc=../product/product_stock_material.jsp">자재 재고 조회</a>
+        <!-- <input type=hidden value="../product/product_stock_material.jsp"/></li> -->
       </ul>
     </li>
     

@@ -8,6 +8,9 @@
 <link rel='stylesheet' href='../category/product_request_view.css' />
 </head>
 <body>
+	<div id=category>
+		<jsp:include page="../category/submenuProduct.jsp"></jsp:include>
+	</div>
 
 	<div id='body'>
 	<!--  ------------------상단타이틀--------------------  -->

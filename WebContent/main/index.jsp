@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 
 <html>
@@ -9,9 +11,8 @@
     <link rel='stylesheet' href='../category/category.css' />
     <script src='../jq_lib/jquery-3.2.1.min.js'></script>
     <script src='../jq_lib/common.js'></script>
-    <script>
+   <!--  <script>
         $(document).ready(
-
 			function(){
                 xhr = new XMLHttpRequest();
 	           xhr.open('get','home.html'); // url요청 정보
@@ -37,7 +38,7 @@
                } 
             });
             });
-    </script>
+    </script> -->
 
     <style>
         #indexbody{
@@ -50,7 +51,6 @@
             
         }
         
-
         
         #allBody {
         }
@@ -61,7 +61,6 @@
             padding-top:10px;
             margin-right: 20px;           
         }
-
         #indexSection {
         }
         
@@ -89,7 +88,6 @@
             background-color: #222;    
         }
         */
-
         #indeximage{
         transition: .5s ease;
         backface-visibility: hidden;
@@ -103,11 +101,10 @@
             width: 90%;
             margin: 0 auto;
             max-width: 900px;
-            border: 1px solid #aaa;
+          /*  border: 1px solid #aaa; */
             min-width: 350px;
         }
         
-
         
         
         /* 이거 왜 먹여놓으신거지...(수정: 2017 06 26 /황주희)*/
@@ -118,16 +115,23 @@
         }
         
         
-
         #category{
             margin-top: 20px;
             height: 70px;
             /* background-color: aquamarine;  나중에 배경색 지우기*/
         }
-
-        
-
     </style>
+    
+    
+    <%
+    
+    	request.setCharacterEncoding("utf-8");
+    	response.setContentType("text/html;charset=utf-8");
+    	String inc = "home.html";
+    	if(request.getParameter("inc")!=null){
+    		inc = request.getParameter("inc");
+    }
+    %> 
 </head>
 
 
@@ -135,31 +139,37 @@
     <div id=allBody>
  
         <nav id='indexNav'>
-            <a href=# ><img id='indeximg' src="../images/home.png"></a>
-            <input type=hidden value="home.html">
-            <a href=# ><img id='indeximg' src="../images/rnd.png"></a>
-            <input type='hidden' value="../laboratory/laboratoryIndex.html">
-            <a href=#><img id='indeximg' src="../images/purchase.png"></a>
-            <input type=hidden value="../purchase/purchase_Index.html">
-            <a href=#><img id='indeximg' src="../images/product.png"></a>
-            <input type=hidden value="../product/product_index.jsp">
-            <a href=#><img id='indeximg' src="../images/sales.png"></a>
-            <input type=hidden value="../sales/sales_index.html">
+            <a href="../main/index.jsp?inc=home.html" ><img id='indeximg' src="../images/home.png"></a>
+            <!-- <input type=hidden value="home.html"> -->
+            
+            <a href="../main/index.jsp?inc=../laboratory/laboratoryHome.jsp" ><img id='indeximg' src="../images/rnd.png"></a>
+            <!-- <input type='hidden' value="../laboratory/laboratoryIndex.html"> -->
+            
+            <a href="../main/index.jsp?inc=../purchase/purchase_home.jsp"><img id='indeximg' src="../images/purchase.png"></a>
+            <!-- <input type=hidden value="../purchase/purchase_Index.html"> -->
+            
+            <a href="../main/index.jsp?inc=../product/product_home.jsp" ><img id='indeximg' src="../images/product.png"></a>
+            <!-- <input type=hidden value="../product/product_index.jsp"> -->
+            
+            <a href="../main/index.jsp?inc=../sales/sales_home.jsp"><img id='indeximg' src="../images/sales.png"></a>
+            <!-- <input type=hidden value="../sales/sales_index.html"> -->
+            
             <a href=#><img id='indeximg' src="../images/mypage.png"></a>
         </nav>
-        <div id='mainBody'>
+    <div id='mainBody'>
 
             <header id='indexHeader'>
                 <a href="#"><img id='indeximg' src="../images/logout.png"></a>
             </header>
             
             <!--각 팀들 카테고리 들어갈 부분(수정:2017 06 26 / 황주희)-->
-            <div id='category'>
-			
-            </div>
+            <!-- <div id='category'></div> -->
 
             <section id='indexSection'>
                 <div id='indexContent'>
+
+<%-- <%out.print(inc); %> --%>
+			<jsp:include page="<%=inc%>"/>
 
                    <!-- <input type="hidden" id='pathCheck' value="testFile.html"> --> 
 

@@ -4,8 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<<<<<<< HEAD
 <title>제품 재고 조회</title>
 <link rel='stylesheet' href='../category/product_stock.css' />
+
     <script>
 				
 				$('#product_stock_p_view_go').click(function(){
@@ -26,6 +28,9 @@
 
 </head>
 <body>
+	<div id=category>
+		<jsp:include page="../category/submenuProduct.jsp"></jsp:include>
+	</div>
 <div id=top_line> <!-- 맨 위 검색범위 선택하는 부분 -->
 	<span class='top_main'>제품 검색</span>
 	<span class='top_menu'>제품 코드</span>
@@ -71,6 +76,10 @@
 	<span> </span>
 </div>
 
-<a href=# id='product_stock_p_view_go'>상세 보기</a>
+	<div id='productResult'>
+		제품 재고 조회<br/>
+		<a href=# id='index.jsp?inc=../product/product_stock_p_view.jsp'>상세 보기</a>
+	</div>
+
 </body>
 </html>
