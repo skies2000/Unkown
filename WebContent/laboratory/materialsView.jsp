@@ -10,21 +10,21 @@
 	</head>
 
 	<body>
-<h2>ìì¬ë·°</h2><hr/>
+<h2>자재뷰°</h2><hr/>
 
 <form>
   
     <img src="../images/yyh_empImage30002.jpg">
     
-    <span>ìì±ì</span>
-    <span>ì íëª</span>
-    <span>ê²°ì¬ì¹ì¸ì1</span><br/>
-    <span>ë¨ê°</span>    
-    <span>ìì¬ì¢ë¥</span>
-    <span>ê²°ì¬ì¹ì¸ì2</span><br/>
-    <span>ìì±ì¼</span>
+    <span>작성자</span>
+    <span>제품명</span>
+    <span>결재승인자1</span><br/>
+    <span>단가</span>    
+    <span>자재종류</span>
+    <span>결재승인자</span><br/>
+    <span>작성일</span>
     <span></span>
-    <span>ê²°ì¬ì¹ì¸ìí</span>
+    <span>결재승인상태</span>
    
 </form>
 	</body> 

@@ -10,6 +10,7 @@
 	</head>
 
 	<body>
+	자재리스트 등록
 
 	</body>
 </html>

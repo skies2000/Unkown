@@ -12,21 +12,16 @@
 	<mvc:annotation-driven/>
 	<mvc:default-servlet-handler/>
 	
-	<mvc:view-resolvers>
-		<mvc:jsp prefix="index.jsp?inc=./"/>
-		<mvc:jsp suffix=".jsp"/>
-	</mvc:view-resolvers>
 	
-	<!-- mybatis Factory -->
-	<bean id='factory' class='myba.UnknownFactory'/>
 
-	<bean id='dao' class='bean.UnknownDaoo'>
-		<constructor-arg ref='factory'/>
-	</bean>	
 
-	<bean id='ctrl' class='bean.SpringUnknownController'>
+	<bean id='dao' class='hwan.HwanDao'>
+	</bean> 
+	
+	<bean id='ctrl' class='hwan.HwanController'>
 		<constructor-arg ref='dao'/>
 	</bean>
+
 
 </beans>
 

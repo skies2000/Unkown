@@ -1,4 +1,4 @@
-package bean;
+package beanjun;
 
 
 public class NoNameVo {

@@ -7,13 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div id=category>
-	<jsp:include page="../category/submenuLaboraory.jsp"></jsp:include>
-</div>
+${msg1}<br/>
+${msg2}<br/>
+${msg3}<br/>
+${msg4}<br/>
 
-
-<img src="../images/Autumn1-1920x1200-wallpapershd.org.jpg"/>
- 
 
 </body>
 </html>

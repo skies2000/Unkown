@@ -95,6 +95,12 @@
             top: 1px;
         }
     </style>
+    
+    <script>
+    function docConInputBtn(){
+    	window.open("../laboratory/documentContentInput.jsp","","width=500px, height=300px");
+    }
+    </script>
 </head>
 
 <body>
@@ -102,7 +108,7 @@
 <div id=category>
 	<jsp:include page="../category/submenuLaboraory.jsp"></jsp:include>
 </div>
-        <div id=mTitle>자재등록</div>
+        <div id=mTitle>자재등록</div>
         <hr/>
         <form id="mat_frm" method="post" enctype="multipart/form-data">
             <table>
@@ -121,7 +127,7 @@
        <option value="">핸들</option>
        <option value="">바퀴</option>
         <option value="">벨</option>
-        <option value="">프레임</option> 
+        <option value="">프레임</option> 
         <option value="">체인</option>
         <option value="">라이트</option>
 </select>
@@ -141,18 +147,18 @@
 
                     <td>
 
-                        <a href="#" class="myButton">문서 내용 입력</a>
+                        <a href="#" class="myButton" onclick="docConInputBtn()">문서 내용 입력</a>
                     </td>
 
                     <td colspan="2">
-                        <input type='file' value='사진첨부' />
+                        <label>사진첨부</label><input type='file' value='사진첨부' />
                     </td>
                 </tr>
             </table>
 
             <p/>
 
-            <a href="#" class="myButton buttonBoder">등록</a>
+            <a href="#" class="myButton buttonBoder">등록</a>
         </form>
 
     </div>

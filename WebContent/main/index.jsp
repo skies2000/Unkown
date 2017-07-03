@@ -112,19 +112,20 @@
     <div id=allBody>
  
         <nav id='indexNav'>
-            <a href=# ><img id='indeximg' src="../images/home.png"></a>
+            <a href="../main/index.jsp?inc=home.html" ><img id='indeximg' src="../images/home.png"></a>
             <!-- <input type=hidden value="home.html"> -->
             
-            <a href="index.jsp?inc=../laboratory/laboratoryIndex.jsp" ><img id='indeximg' src="../images/rnd.png"></a>
+            <a href="../main/index.jsp?inc=../laboratory/laboratoryHome.jsp" ><img id='indeximg' src="../images/rnd.png"></a>
             <!-- <input type='hidden' value="../laboratory/laboratoryIndex.html"> -->
             
-            <a href="index.jsp?inc=../purchase/purchase_home.jsp"><img id='indeximg' src="../images/purchase.png"></a>
+            <a href="../main/index.jsp?inc=../purchase/purchase_home.jsp"><img id='indeximg' src="../images/purchase.png"></a>
             <!-- <input type=hidden value="../purchase/purchase_Index.html"> -->
             
-            <a href="product_home.jun" ><img id='indeximg' src="../images/product.png"></a>
+            <a href="product_home.hwan" ><img id='indeximg' src="../images/product.png"></a>
+
             <!-- <input type=hidden value="../product/product_index.jsp"> -->
             
-            <a href="index.jsp?inc=../sales/sales_home.jsp"><img id='indeximg' src="../images/sales.png"></a>
+            <a href="../main/index.jsp?inc=../sales/sales_home.jsp"><img id='indeximg' src="../images/sales.png"></a>
             <!-- <input type=hidden value="../sales/sales_index.html"> -->
             
             <a href=#><img id='indeximg' src="../images/mypage.png"></a>
