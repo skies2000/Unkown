@@ -1,3 +1,5 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 
     pageEncoding="UTF-8"%>
@@ -96,10 +98,19 @@
     	<a href="#"><span class='phcate'>페달</span></a>
     </div>
     
+    <%
+    List listimg = new ArrayList();
+    
+    listimg.add()
+    
+    %>
+    
+    
+    
     <!-- 자재 페이지 그리드 형식 조회 -->	
 	<div id=pur_home_view>
 	
-	<!-- 체크박스 -->	
+	<!-- for 문 돌아가는거 -->	
 		<c:forEach begin='0' end='19'> 
 		
 		<div class='phviewitem'>
