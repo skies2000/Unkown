@@ -21,6 +21,8 @@ public class HwanController {
 	public HwanController(){
 		
 	}
+
+	
 	public HwanController(HwanDao dao){
 		this.dao = dao;
 	}
@@ -67,8 +69,19 @@ public class HwanController {
 			
 			return mv;
 		}
-			
 	}
+	
+	
+	@RequestMapping(value = "product_home.hwan", method={RequestMethod.GET, RequestMethod.POST})
+	public Object product_home(){
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("aabbccdd");
+		mv.setViewName("../main/index.jsp?inc=../product/product_index.jsp");
+		return mv;
+	}
+	
+	
 	
 	@SuppressWarnings("finally")
 	public MultipartRequest getMul(HttpServletRequest req){

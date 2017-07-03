@@ -1,4 +1,4 @@
-package bean;
+package beanjun;
 
 import java.util.ArrayList;
 import java.util.Enumeration;
@@ -22,10 +22,19 @@ public class SpringUnknownController {
 	public SpringUnknownController(UnknownDao dao) {
 		this.dao = dao;
 	}
-
 	
-//	Âü°í¿ë!
-	@RequestMapping(value = "list.do", method = { RequestMethod.GET, RequestMethod.POST })
+	
+	@RequestMapping(value = "product_home.jun", method={RequestMethod.GET, RequestMethod.POST})
+	public Object product_home(){
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("aabbccdd");
+		mv.setViewName("../product/product_index");
+		return mv;
+	}
+	
+
+	/*@RequestMapping(value = "list.do", method = { RequestMethod.GET, RequestMethod.POST })
 	public Object list(NoNameVo vo) {
 		ModelAndView mv = new ModelAndView();
 		try {
@@ -35,6 +44,6 @@ public class SpringUnknownController {
 		} finally {
 			return mv;
 		}
-	}
+	}*/
 
 }

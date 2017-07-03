@@ -10,7 +10,7 @@
         $(document).ready(
 			function(){
                 xhr = new XMLHttpRequest();
-	           xhr.open('get','../purchase/purchase_home.html'); // url요청 정보
+	           xhr.open('get','../purchase/purchase_home.jsp'); // url요청 정보
 	           xhr.send(); // 서버에 전송
                var str='';
                xhr.onreadystatechange=function(){
@@ -150,7 +150,7 @@ ent;
 <nav id=submenuNav>
   <ul class="nav">
     <li><a href="#">조회</a>
-    <input type =hidden value="../purchase/purchase_home.html"/>
+    <input type =hidden value="../purchase/purchase_home.jsp"/>
     </li>
     
     <li><a href="##">보고서</a>
@@ -165,7 +165,7 @@ ent;
         <li><a href="#">보고서 관리</a>
         <input type=hidden value="../purchase/purchase_ReportList.html"/>
         <li><a href="#">보고서 상세</a>
-        <input type=hidden value="../purchase/purchase_ReportView.html"/>
+        <input type=hidden value="../purchase/purchase_ReportView.jsp"/>
         </li>
       </ul>
     </li>

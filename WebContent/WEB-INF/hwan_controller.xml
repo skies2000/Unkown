@@ -13,7 +13,7 @@
 	<mvc:default-servlet-handler/>
 	
 	
-
+	<bean id='factory' class='myba.UnknownFactory'/>
 
 	<bean id='dao' class='hwan.HwanDao'>
 	</bean> 
