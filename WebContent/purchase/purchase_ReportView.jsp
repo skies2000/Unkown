@@ -1,10 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel='stylesheet' href='../category/purchase_ReportView.css' />
 <title>Insert title here</title>
 </head>
 <body>
-보고서 상세
+
+
+	
 </body>
 </html>
