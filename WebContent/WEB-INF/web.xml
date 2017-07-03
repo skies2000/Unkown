@@ -43,7 +43,171 @@
 	</servlet-mapping>
 	
 	
-<!-- ////////////////////////// -->	
+<!-- ////////////////////////// -->
+
+
+
+<!--////////윤여훈////////-->
+	
+
+	
+	<servlet><!--서블릿이나 스프링 쓰실분 이런식으로 추가하세요~~  -->
+		<servlet-name>hoonDispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>
+				/WEB-INF/hoon_controller.xml
+			</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>hoonDispatcher</servlet-name>
+		<url-pattern>*.hoon</url-pattern>
+	</servlet-mapping>
+	
+	
+<!-- ////////////////////////// -->
+
+
+
+<!--////////황주희////////-->
+	
+
+	
+	<servlet><!--서블릿이나 스프링 쓰실분 이런식으로 추가하세요~~  -->
+		<servlet-name>jooDispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>
+				/WEB-INF/joo_controller.xml
+			</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>jooDispatcher</servlet-name>
+		<url-pattern>*.joo</url-pattern>
+	</servlet-mapping>
+	
+	
+<!-- ////////////////////////// -->
+
+
+
+
+<!--////////최익준////////-->
+	
+
+	
+	<servlet><!--서블릿이나 스프링 쓰실분 이런식으로 추가하세요~~  -->
+		<servlet-name>junDispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>
+				/WEB-INF/jun_controller.xml
+			</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>junDispatcher</servlet-name>
+		<url-pattern>*.jun</url-pattern>
+	</servlet-mapping>
+	
+	
+<!-- ////////////////////////// -->
+
+
+
+<!--////////최익준////////-->
+	
+
+	
+	<servlet><!--서블릿이나 스프링 쓰실분 이런식으로 추가하세요~~  -->
+		<servlet-name>kimHaDispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>
+				/WEB-INF/kimHa_controller.xml
+			</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>kimHaDispatcher</servlet-name>
+		<url-pattern>*.kimHa</url-pattern>
+	</servlet-mapping>
+	
+	
+<!-- ////////////////////////// -->
+
+
+
+<!--////////최익준////////-->
+	
+
+	
+	<servlet><!--서블릿이나 스프링 쓰실분 이런식으로 추가하세요~~  -->
+		<servlet-name>soDispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>
+				/WEB-INF/so_controller.xml
+			</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>soDispatcher</servlet-name>
+		<url-pattern>*.so</url-pattern>
+	</servlet-mapping>
+	
+	
+<!-- ////////////////////////// -->
+
+
+<!--////////성은영////////-->
+	
+
+	
+	<servlet><!--서블릿이나 스프링 쓰실분 이런식으로 추가하세요~~  -->
+		<servlet-name>sungDispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>
+				/WEB-INF/sung_controller.xml
+			</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>sungDispatcher</servlet-name>
+		<url-pattern>*.sung</url-pattern>
+	</servlet-mapping>
+	
+	
+<!-- ////////////////////////// -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 	
 
 	<filter>

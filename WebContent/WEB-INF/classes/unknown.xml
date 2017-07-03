@@ -3,7 +3,7 @@
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="unknowndb">
 
-	<!-- <insert id='brd_insert' parameterType='bean.BoardVo'> 참고용~
+	<!-- <insert id='brd_insert' parameterType='bean.BoardVo'> 참고용~ 임시~ 공용 ~
 	insert all 
 	
 		into board(serial, mdate, worker, subject, content, hit,grp, deep) 

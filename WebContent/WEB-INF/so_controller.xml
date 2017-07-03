@@ -11,22 +11,8 @@
 
 	<mvc:annotation-driven/>
 	<mvc:default-servlet-handler/>
-	<!--임시 or 공용  -->
-	<!-- <mvc:view-resolvers>
-		<mvc:jsp prefix="index.jsp?inc=./"/>
-		<mvc:jsp suffix=".jsp"/>
-	</mvc:view-resolvers>
 	
-	mybatis Factory
-	<bean id='factory' class='myba.UnknownFactory'/>
-
-	<bean id='dao' class='bean.UnknownDaoo'>
-		<constructor-arg ref='factory'/>
-	</bean>	
-
-	<bean id='ctrl' class='bean.SpringUnknownController'>
-		<constructor-arg ref='dao'/>
-	</bean> -->
+	<!--임소영  -->
 
 </beans>
 
