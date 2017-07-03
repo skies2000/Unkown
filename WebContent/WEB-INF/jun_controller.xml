@@ -11,8 +11,7 @@
 
 	<mvc:annotation-driven/>
 	<mvc:default-servlet-handler/>
-	
-	<!--임소영  -->
+	<!--최익준  -->
 
 </beans>
 

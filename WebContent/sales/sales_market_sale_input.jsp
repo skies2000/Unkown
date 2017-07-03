@@ -73,15 +73,23 @@
 				</div>
 			</div>
 			<div id='subject'>
-				<span id='code'>제품코드</span> <span id='codeName'>제품명</span> <span
-					id='custom'>거래처</span> <span id='ea'>수량</span> <span id='unit'>단가</span>
-				<span id='total'>총액</span> <span id='saledate'>판매일자</span>
+				<span id='code'>제품코드</span>
+				<span id='codeName'>제품명</span> 
+				<span id='custom'>거래처</span>
+				<span id='ea'>수량</span>
+				<span id='unit'>단가</span>
+				<span id='total'>총액</span> 
+				<span id='saledate'>판매일자</span>
 			</div>
 			<div id='sl_content'>
 				<div class='content_list'>
-					<span id='code'>a001</span> <span id='codeName'>외발자전거-red</span> <span
-						id='custom'>삼성생명</span> <span id='ea'>500</span> <span id='unit'>500,000</span>
-					<span id='total'>250,000,000</span> <span id='saledate'>2017-06-28</span>
+					<span id='code'>a001</span>
+					<span id='codeName'>외발자전거-red</span> 
+					<span id='custom'>삼성생명</span> 
+					<span id='ea'>500</span> 
+					<span id='unit'>500,000</span>
+					<span id='total'>250,000,000</span> 
+					<span id='saledate'>2017-06-28</span>
 					<span id='del'>삭제</span>
 				</div>
 

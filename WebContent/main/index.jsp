@@ -11,40 +11,13 @@
     <link rel='stylesheet' href='../category/category.css' />
     <script src='../jq_lib/jquery-3.2.1.min.js'></script>
     <script src='../jq_lib/common.js'></script>
-   <!--  <script>
-        $(document).ready(
-			function(){
-                xhr = new XMLHttpRequest();
-	           xhr.open('get','home.html'); // url요청 정보
-	           xhr.send(); // 서버에 전송
-               var str='';
-               xhr.onreadystatechange=function(){
-                   if(xhr.readyState == 4 && xhr.status == 200){
-                       str = xhr.responseText;
-                       $('#indexContent').html(str);
-                   }
-               }
-            $('#indexNav a').click(function(){
-            var url = $(this).next('input').val()
-                xhr = new XMLHttpRequest();
-	           xhr.open('get',url); // url요청 정보
-	           xhr.send(); // 서버에 전송
-               var str='';
-               xhr.onreadystatechange=function(){
-                   if(xhr.readyState == 4 && xhr.status == 200){
-                       str = xhr.responseText;
-                       $('#indexContent').html(str);
-                   }
-               } 
-            });
-            });
-    </script> -->
+  
 
     <style>
         #indexbody{
             background-color: black;
         }
-        #indexbody * {
+        #indexbody {
             box-sizing: border-box;
             color:white;
             text-decoration: none;            
@@ -101,8 +74,7 @@
             width: 90%;
             margin: 0 auto;
             max-width: 900px;
-          /*  border: 1px solid #aaa; */
-            min-width: 350px;
+
         }
         
         
@@ -148,7 +120,8 @@
             <a href="../main/index.jsp?inc=../purchase/purchase_home.jsp"><img id='indeximg' src="../images/purchase.png"></a>
             <!-- <input type=hidden value="../purchase/purchase_Index.html"> -->
             
-            <a href="../main/index.jsp?inc=../product/product_home.jsp" ><img id='indeximg' src="../images/product.png"></a>
+            <a href="product_home.hwan" ><img id='indeximg' src="../images/product.png"></a>
+
             <!-- <input type=hidden value="../product/product_index.jsp"> -->
             
             <a href="../main/index.jsp?inc=../sales/sales_home.jsp"><img id='indeximg' src="../images/sales.png"></a>
@@ -161,7 +134,7 @@
             <header id='indexHeader'>
                 <a href="#"><img id='indeximg' src="../images/logout.png"></a>
             </header>
-            
+       
             <!--각 팀들 카테고리 들어갈 부분(수정:2017 06 26 / 황주희)-->
             <!-- <div id='category'></div> -->
 
@@ -180,6 +153,8 @@
             <footer id=indexFooter></footer>
         </div>
     </div>
+    
+    
 </body>
 
 </html>
