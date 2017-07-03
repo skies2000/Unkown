@@ -10,8 +10,8 @@
 <link rel='stylesheet' href='../category/category.css' />
      
     <script src='../jq_lib/common.js'></script>
-
-	<!--  <script>
+    <script>
+    
         $(document).ready(
 			function(){
                 xhr = new XMLHttpRequest();
@@ -34,41 +34,41 @@
                xhr.onreadystatechange=function(){
                    if(xhr.readyState == 4 && xhr.status == 200){
                        str = xhr.responseText;
+                       
                        $('#laboratorResult').html(str);
-                   }
+                   } 
                }
             });
             });
-    </script> -->
-
+        </script>
 </head>
 <body>
 
 	<div id='uipgMenuWrap'>
 		<div class='uipgMenu'>
 		  <ul>
-    <li><a href="index.jsp?inc=../laboratory/laboratoryHome.jsp">Home</a>
-    <!-- <input type =hidden value="../laboratory/laboratoryHome.jsp"/> -->
+    <li><a href="#">Home</a>
+    <input type =hidden value="../laboratory/laboratoryHome.html"/>
     </li>
     
     <li><a href="##">제품</a>
       <ul>
-        <li><a href="index.jsp?inc=../laboratory/productInput.jsp">등록</a>
-        <!-- <input type=hidden value="../laboratory/productInput.html"/> -->
+        <li><a href="#">등록</a>
+        <input type=hidden value="../laboratory/productInput.html"/>
         </li>
         
-        <li><a href="index.jsp?inc=../laboratory/productDetails.jsp">상세</a>
-        <!-- <input type=hidden value="../laboratory/productDetails.html"/> -->
+        <li><a href="#">상세</a>
+        <input type=hidden value="../laboratory/productDetails.html"/>
         </li>
       </ul>
     </li>
     <li><a href="##">자재</a>
       <ul>
-        <li><a href="index.jsp?inc=../laboratory/materialsInput.jsp">등록</a>
-        <!-- <input type=hidden value="../laboratory/materialsInput.html"/> -->
+        <li><a href="#">등록</a>
+        <input type=hidden value="../laboratory/materialsInput.html"/>
         </li>
-        <li><a href="index.jsp?inc=../laboratory/materialsDetails.jsp">상세</a>
-        <!-- <input type=hidden value="../laboratory/materialsDetails.html"/> -->
+        <li><a href="#">상세</a>
+        <input type=hidden value="../laboratory/materialsDetails.html"/>
         </li>
          
       </ul>

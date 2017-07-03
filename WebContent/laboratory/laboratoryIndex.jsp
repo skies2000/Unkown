@@ -13,7 +13,7 @@
 			function(){
                 
                 xhr = new XMLHttpRequest();
-	           xhr.open('get','../category/submenuLaboraory.html'); // urlìì²­ ì ë³´
+	           xhr.open('get','../category/submenuLaboraory.html'); 
 	           xhr.send(); 
                var str='';
                xhr.onreadystatechange=function(){
@@ -37,7 +37,7 @@
 	<div id=category>
 		<jsp:include page="../category/submenuLaboraory.jsp"></jsp:include>
 	</div>
-        <!-- <div id=laboratorResult></div> -->
+        <div id=laboratorResult></div>
     
 	</body>
 </html>

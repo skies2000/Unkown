@@ -1,63 +1,50 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!doctype html>
 
 <html>
 
-	<head>
-	<script>
-	function docConInputBtn(){
-		window.open("../laboratory/documentContentInput.jsp","","height=300px, width=500px");
-	}
-	
-	function mlist_input(){
-		window.open("../laboratory/p_materialList_Input.jsp","","height=300px, width=500px");
-	}
-	</script>
-
+<head>
     <title>Page Title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
     <style>
-    #piBody #title {
+        #maBody #mTitle {
             padding-bottom: 5%;
             font-size: 30px;
             margin-left: 20%;
         }
         
-        #piBody input[type='text'],
-        #piBody select *,
-        #piBody select,
-        #piBody input[type='file'] {
+        #maBody input[type='text'],
+        #maBody select *,
+        #maBody select,
+        #maBody input[type='file'] {
             color: white;
             background-color: black;
             margin: 5px;
         }
         
-        #piBody table,
-        #piBody th,
-        #piBody td {
+        #maBody table,
+        #maBody th,
+        #maBody td {
             border: 1px solid white;
             border-spacing: 0px;
         }
         
-        #piBody a {
+        #maBody a {
             margin: 5px;
         }
         
-        #piBody .buttonBoder {
+        #maBody .buttonBoder {
             border: 1px solid white;
             margin-left: 71%;
             margin-top: 3%;
         }
         
-        #piBody {
+        #maBody {
             margin-left 50%;
             margin-right 50% width: 800px;
-            
         }
         
-        #piBody table {
+        #maBody table {
             width: 60%;
             height: 100px;
             margin: auto;
@@ -106,36 +93,41 @@
             top: 1px;
         }
     </style>
+    
+    <script>
+    function docConInputBtn(){
+    	window.open("../laboratory/documentContentInput.jsp","","width=500px, height=300px");
+    }
+    </script>
 </head>
 
 <body>
+    <div id=maBody>
 <div id=category>
 	<jsp:include page="../category/submenuLaboraory.jsp"></jsp:include>
 </div>
-    <div id=piBody>
-        <form>
-
-            <div id='title'>제품등록</div>
-            <hr/>
+        <div id=mTitle>자재등록</div>
+        <hr/>
+        <form id="mat_frm" method="post" enctype="multipart/form-data">
             <table>
                 <tr>
                     <td colspan="2"><input type='text' placeholder="문서제목" /></td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input type='text' placeholder="제품명" />
+                        <input type='text' placeholder="자재명" />
                     </td>
-
                 </tr>
                 <tr>
                     <td colspan="2">
                         <select>
-    <option value="">---자전거 종류---</option>
-    <option value="">1. 외발 자전거</option>
-    <option value="">2. 두발 자전거</option>
-    <option value="">3. 세발 자전거</option>
-    <option value="">4. 네발 자전거</option>
-    <option value="">5. 하이브리드 자전거</option>
+   
+       <option value="">핸들</option>
+       <option value="">바퀴</option>
+        <option value="">벨</option>
+        <option value="">프레임</option> 
+        <option value="">체인</option>
+        <option value="">라이트</option>
 </select>
                     </td>
                 </tr>
@@ -150,26 +142,24 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <a href="#" class="myButton" onclick="mlist_input()">자재리스트 등록</a>
 
+                    <td>
+
+                        <a href="#" class="myButton" onclick="docConInputBtn()">문서 내용 입력</a>
                     </td>
-                    <td>
 
-                        <a href="#" class="myButton" onClick="docConInputBtn()">문서 내용 입력</a>
+                    <td colspan="2">
+                        <label>사진첨부</label><input type='file' value='사진첨부' />
                     </td>
                 </tr>
-                <tr>
-                    <td colspan="2">
-                        <label>사진첨부 : </label><input type='file' value='사진첨부' />
-                    </td>
-                </tr> 
             </table>
+
             <p/>
+
             <a href="#" class="myButton buttonBoder">등록</a>
         </form>
+
     </div>
 </body>
-
 
 </html>

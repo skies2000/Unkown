@@ -112,9 +112,9 @@
  
         <nav id='indexNav'>
             <a href="../main/index.jsp?inc=home.html" ><img id='indeximg' src="../images/home.png"></a>
-            <!-- <input type=hidden value="home.html"> -->
+            <!-- <input type=hidden value="home.html"> --> 
             
-            <a href="../main/index.jsp?inc=../laboratory/laboratoryHome.jsp" ><img id='indeximg' src="../images/rnd.png"></a>
+            <a href="../main/index.jsp?inc=../laboratory/laboratoryIndex.jsp" ><img id='indeximg' src="../images/rnd.png"></a>
             <!-- <input type='hidden' value="../laboratory/laboratoryIndex.html"> -->
             
             <a href="../main/index.jsp?inc=../purchase/purchase_home.jsp"><img id='indeximg' src="../images/purchase.png"></a>
