@@ -92,22 +92,41 @@
             position: relative;
             top: 1px;
         }
+        
+        #mTitle {
+            margin-top: 50px;
+        }
+        
+        #maBody select {
+            display: inline-block;
+            height: 20px;
+        }
+        
+     
+
     </style>
-    
+
     <script>
-    function docConInputBtn(){
-    	window.open("../laboratory/documentContentInput.html","","width=500px, height=300px");
-    }
+        function docConInputBtn() {
+            window.open("../laboratory/documentContentInput.html", "", "width=600px, height=400px");
+        }
+
+        function mapproveMan_one() {
+            window.open("../laboratory/approveMan_one.html", "", "width=500px, height=300px");
+        }
+
+        function mapproveMan_two() {
+            window.open("../laboratory/approveMan_two.html", "", "width=500px, height=300px");
+        }
+
     </script>
 </head>
 
 <body>
     <div id=maBody>
-<div id=category>
-	<jsp:include page="../category/submenuLaboraory.jsp"></jsp:include>
-</div>
+
         <div id=mTitle>자재등록</div>
-        <hr/>
+
         <form id="mat_frm" method="post" enctype="multipart/form-data">
             <table>
                 <tr>
@@ -121,7 +140,7 @@
                 <tr>
                     <td colspan="2">
                         <select>
-   
+       <option> --자재종류-- </option>
        <option value="">핸들</option>
        <option value="">바퀴</option>
         <option value="">벨</option>
@@ -133,11 +152,11 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="#" class="myButton">결재승인자1</a>
+                        <a href="#" class="myButton" onclick="mapproveMan_one()">결재승인자1</a>
 
                     </td>
                     <td>
-                        <a href="#" class="myButton">결재승인자2</a>
+                        <a href="#" class="myButton" onclick="mapproveMan_two()">결재승인자2</a>
 
                     </td>
                 </tr>

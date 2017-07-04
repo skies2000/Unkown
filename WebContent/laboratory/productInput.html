@@ -1,24 +1,32 @@
-    
 <!doctype html>
 
 <html>
 
-	<head>
-	<script>
-	function docConInputBtn(){
-		window.open("../laboratory/documentContentInput.html","","height=400px, width=600px");
-	}
-	
-	function mlist_input(){
-		window.open("../laboratory/p_materialList_Input.html","","height=300px, width=500px");
-	}
-	</script>
+<head>
+    <script>
+        function docConInputBtn() {
+            window.open("../laboratory/documentContentInput.html", "", "height=400px, width=600px");
+        }
+
+        function mlist_input() {
+            window.open("../laboratory/p_materialList_Input.html", "", "height=300px, width=500px");
+        }
+
+        function approveMan_one() {
+            window.open("../laboratory/approveMan_one.html", "", "height=300px, width=500px");
+        }
+
+        function approveMan_two() {
+            window.open("../laboratory/approveMan_two.html", "", "height=300px, width=500px");
+        }
+
+    </script>
 
     <title>Page Title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
     <style>
-    #piBody #title {
+        #piBody #title {
             padding-bottom: 5%;
             font-size: 30px;
             margin-left: 20%;
@@ -52,14 +60,22 @@
         
         #piBody {
             margin-left 50%;
-            margin-right 50% width: 800px;
-            
+            margin-right 50% 
+            width: 800px;
         }
         
         #piBody table {
             width: 60%;
-            height: 100px;
             margin: auto;
+        }
+        
+        #title {
+            margin-top: 50px;
+        }
+        
+        #piBody select {
+            display: inline-block;
+            height: 20px;
         }
         
         .myButton {
@@ -104,6 +120,7 @@
             position: relative;
             top: 1px;
         }
+
     </style>
 </head>
 
@@ -138,17 +155,17 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="#" class="myButton">결재승인자1</a>
+                        <a href="#" class="myButton" onClick="approveMan_one()">결재승인자1</a>
 
                     </td>
                     <td>
-                        <a href="#" class="myButton">결재승인자2</a>
+                        <a href="#" class="myButton" onClick="approveMan_two()">결재승인자2</a>
 
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <a href="#" class="myButton" onclick="mlist_input()">자재리스트 등록</a>
+                        <a href="#" class="myButton" onClick="mlist_input()">자재리스트 등록</a>
 
                     </td>
                     <td>
@@ -160,7 +177,7 @@
                     <td colspan="2">
                         <label>사진첨부 : </label><input type='file' value='사진첨부' />
                     </td>
-                </tr> 
+                </tr>
             </table>
             <p/>
             <a href="#" class="myButton buttonBoder">등록</a>

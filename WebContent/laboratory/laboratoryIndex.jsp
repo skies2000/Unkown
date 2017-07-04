@@ -24,11 +24,17 @@
                }
             });
         </script> -->
+        
+       
         <style>
 
     #laboratorResult *{
     color : white;
     }
+      #laboratorResult {
+            margin-top: 80px;
+        }       
+            
 
 </style>  
 	</head>
