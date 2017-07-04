@@ -118,7 +118,7 @@
 	<servlet-mapping>
 		<servlet-name>junDispatcher</servlet-name>
 		<url-pattern>*.jun</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> 
 	
 	
 <!-- ////////////////////////// -->
