@@ -4,6 +4,14 @@ public class HwanVo {
 	String userid;
 	String epwd;
 	String ecode;
+	String userpwd;
+	
+	public String getUserpwd() {
+		return userpwd;
+	}
+	public void setUserpwd(String userpwd) {
+		this.userpwd = userpwd;
+	}
 	public String getUserid() {
 		return userid;
 	}

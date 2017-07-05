@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -71,12 +72,24 @@ public class HwanController {
 		}
 	}
 	
+	@RequestMapping(value = "login/mainIndex", method = {RequestMethod.GET, RequestMethod.POST})
+	public Object mainIndex( HttpServletRequest req){
+		ModelAndView mv = new ModelAndView();
+		MultipartRequest mul = getMul(req);
+		HttpSession session =  req.getSession();
+		mv.setViewName("../main/index.jsp");
+		System.out.println("유저 아이디 : "+mul.getParameter("userid"));
+		System.out.println("유저 비밀번호 : "+mul.getParameter("userpwd"));
+		session.setAttribute("user", mul.getParameter("userid"));
+		return mv;
+		
+	}
+	
 	
 	@RequestMapping(value = "product_home.hwan", method={RequestMethod.GET, RequestMethod.POST})
 	public Object product_home(){
 		
 		ModelAndView mv = new ModelAndView();
-		System.out.println("aabbccdd");
 		mv.setViewName("../main/index.jsp?inc=../product/product_index.jsp");
 		return mv;
 	}

@@ -45,7 +45,8 @@
 				for(var i = 0; i<jData.length;i++){
 					 if(jData[i].ecode == userid){
 						if(jData[i].epwd == userpwd){
-							location.href="../main/index.jsp";
+							frm.action = "mainIndex.hwan";
+							frm.submit();
 							return;
 						}else{
 							alert("비밀번호가 틀렸습니다.");

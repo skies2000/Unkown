@@ -23,13 +23,16 @@
             text-decoration: none;            
             
         }
-        
+        #loginSessionTemp{
+        	
+        	
+        }
         
         #allBody {
         }
         
         #indexHeader {
-            text-align: right;
+        text-align: right;
             height: 30px;  
             padding-top:10px;
             margin-right: 20px;           
@@ -77,8 +80,6 @@
 
         }
         
-        
-        
         /* 이거 왜 먹여놓으신거지...(수정: 2017 06 26 /황주희)*/
          /*이게 없으면 왼쪽 메뉴 속으로 컨텐츠들이 들어가 버림*/
         #mainBody{
@@ -96,6 +97,7 @@
     
     
     <%
+    
     
     	request.setCharacterEncoding("utf-8");
     	response.setContentType("text/html;charset=utf-8");
@@ -132,6 +134,12 @@
     <div id='mainBody'>
 
             <header id='indexHeader'>
+            <div id="loginSessionTemp"><!--css가 너무 악먹혀서 임시로 일단 absolute로 함..나중에 변경할꺼  -->
+            <%out.print(session.getAttribute("user")); %>님 로그인(임시 session키값은 user)
+            </div>
+            
+            
+            
                 <a href="#"><img id='indeximg' src="../images/logout.png"></a>
             </header>
        

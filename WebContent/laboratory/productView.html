@@ -7,30 +7,75 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
 		
-	
+	<style>
+	#proView span{
+		border: 2px solid #aaa;
+		display: inline-block;
+		
+	}
+	#proView{
+		width: 500px;
+	}
+	#proView #pvList{
+		width:400px;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+	#proView #pvList span{
+		width: 30%;
+		display: inline-block;
+		margin: 2 0;
+	}
+	</style>
 	</head>
-
-
 	<body>
  <div id=proView>
         <div id="pvTitle">제품뷰</div>
         <hr/>
 
-        <img src="../images/khk_V2image.jpg" width="300px" height="200px" >
-        <span>작성자</span>
-        <span>제품명</span>
-        <span>결재승인자1</span>
-        <br/>
-        <span>단가</span>
-        <span>원가</span>
-        <span>결재승인자2</span>
-        <br/>
-        <span>작성일</span>
-        <span>제품생산기간</span>
-        <span>결재승인상태</span>
-        <br/>
-        <span>자전거종류</span>
-        <span></span>
-        <input type='button' value='자재리스트' />
+		<div id = "pvList">
+		
+        <img src="../images/khk_V2image.jpg" width="300px" height="200px" ><br/>
+        <div>
+	        <span>작성자</span> 
+	        <span>제품명</span>
+	        <span>결재승인자1</span>
+        </div>
+        <div>
+        	<span>아무개</span> 
+	        <span>abcdefg</span>
+	        <span>유재석</span>
+        </div>
+        <div>
+	        <span>단가</span>
+	        <span>원가</span>
+	        <span>결재승인자2</span>
+        </div>
+        <div>
+	        <span>5000</span>
+	        <span>1000</span>
+	        <span>강호동</span>
+        </div>
+        
+        <div>
+	        <span>작성일</span>
+	        <span>제품생산기간</span>
+	        <span>결재승인상태</span>
+        </div>
+        <div>
+	        <span>2017.06.05</span>
+	        <span>22시간</span>
+	        <span>승인대기</span>
+        </div>
+        <div>
+	        <span>자전거종류</span>
+	        <input type='button' value='자재리스트' />
+        </div>
+        <div>
+	        <span>산악자전거</span>
+        </div>
+        
+        
+        </div>
     </div>	</body>
 </html>
