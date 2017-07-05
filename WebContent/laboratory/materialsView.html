@@ -1,39 +1,75 @@
 <!doctype html>
-
 <html>
-
 <head>
     <title>Page Title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
     <style>
-        #maView {
+        #maViewDiv {
             width: 60%;
             margin: auto;
         }
+
+        #maViewDiv table{
+            border: 1px solid #aaa;
+            border-spacing: 0px;
+        }
+        #maViewDiv table td{
+            border: 1px solid #aaa;
+             
+        }
+        
 
     </style>
 </head>
 
 <body>
+   <div id="maViewDiv">
+       
+   
     <div id="maView">자재뷰</div>
     <hr/>
 
     <form>
         <div>
             <img src="../images/yyh_empImage30002.jpg">
-
-            <span>작성자</span>
-            <span>제품명</span>
-            <span>결재승인자1</span><br/>
-            <span>단가</span>
-            <span>자재종류</span>
-            <span>결재승인자</span><br/>
-            <span>작성일</span>
-            <span></span>
-            <span>결재승인상태</span>
+            <table>
+            <tr>
+                <td>작성자</td>
+                <td>자재명</td>
+                <td>결재승인자1</td>
+            </tr>
+            <tr>
+                <td>아무개</td>
+                <td>ggee</td>
+                <td>유재석</td>
+            </tr>
+            
+            <tr>
+                <td>단가</td>
+                <td>자재종류</td>
+                <td>결재승인자2</td>
+            </tr>
+            <tr>
+                <td>5000원</td>
+                <td>핸들</td>
+                <td>강호동</td>
+            </tr>
+            <tr>
+                <td>작성일</td>
+                <td>제품생산기간</td>
+                <td>결재승인상태</td>
+            </tr>
+            <tr>
+                <td>2017.06.04</td>
+                <td>22시간</td>
+                <td>승인대기</td>
+            </tr>
+        </table>
+            
         </div>
     </form>
+    </div>
 </body>
 
 </html>
